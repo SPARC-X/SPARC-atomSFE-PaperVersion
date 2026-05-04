@@ -60,7 +60,6 @@ print(results["energy"])
 * **Pseudopotentials** — Norm-conserving pseudopotential support (e.g. psp8) in `atom.pseudo`.
 * **SCF driver** — Density, Hamiltonian, eigensolver, Poisson, mixing, and convergence in `atom.scf`.
 * **Exchange–correlation** — LDA, GGA-PBE, hybrid (HF), and ML-XC in `atom.xc`.
-* **Data and ML** — Dataset generation, loading, and ML-XC training interfaces in `atom.data` and `atom.xc.ml_xc`.
 
 
 ## Quick start
@@ -96,7 +95,6 @@ results = solver.solve()
 | Use case        | Command |
 |-----------------|---------|
 | Core (CPU)      | `pip install -e .` or `pip install atom` |
-| With ML-XC      | `pip install -e ".[ml]"` |
 | With viz        | `pip install -e ".[viz]"` |
 | Dev + tests     | `pip install -e ".[dev]"` |
 | All optional    | `pip install -e ".[all]"` |
@@ -137,12 +135,12 @@ pip install -e .
 If you use this code in your research, please cite the repository:
 
 ```
-@software{sparc_atomsfe2026,
-  author = {Qihao Cheng and Shubhang Trivedi and Phanish Suryanarayana},
-  title = {{SPARC-atomSFE}: Atomic density functional theory with spectral finite elements},
-  url = {https://github.com/phanish-suryanarayana/atom},
-  version = {0.1.0},
-  year = {2026},
+@software{sparc_atomsfe_placeholder,
+  author = {TBD},
+  title = {TBD},
+  url = {TBD},
+  version = {TBD},
+  year = {TBD},
 }
 ```
 
