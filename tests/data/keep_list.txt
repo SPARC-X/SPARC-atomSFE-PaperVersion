@@ -1,0 +1,20 @@
+# Keep patterns for cleanup_dataset.py (glob-style, relative to this folder)
+# Lines starting with # are comments.
+
+# scripts and docs
+*.py
+*.md
+*.txt
+.gitkeep
+
+# lightweight structured outputs
+*.json
+*.csv
+
+# comparison figures / scripts and literature reference data
+# (``compare/`` and ``reference/`` are also hard-coded skips in cleanup_dataset.py)
+compare/**
+reference/**
+
+# preserve an explicit small regression subset
+golden_cases/**

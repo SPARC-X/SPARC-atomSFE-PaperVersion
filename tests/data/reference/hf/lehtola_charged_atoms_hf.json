@@ -1,0 +1,146 @@
+{
+  "citation": "Lehtola, S. International Journal of Quantum Chemistry 119(19), e25945 (2019), https://doi.org/10.1002/qua.25945",
+  "source": "Table 5 (HF total energies: finite element vs Gaussian Erkale vs literature Gaussian; difference column in microhartree).",
+  "records": [
+    {
+      "species": "H-",
+      "E_fem_au": -0.487929734,
+      "E_erkale_au": -0.487929397,
+      "E_gaussian_au": -0.48793,
+      "delta_fem_minus_erkale_microEh": -0.34
+    },
+    {
+      "species": "He",
+      "E_fem_au": -2.861679996,
+      "E_erkale_au": -2.861675168,
+      "E_gaussian_au": -2.86168,
+      "delta_fem_minus_erkale_microEh": -4.83
+    },
+    {
+      "species": "Li+",
+      "E_fem_au": -7.236415201,
+      "E_erkale_au": -7.236414275,
+      "E_gaussian_au": -7.23641,
+      "delta_fem_minus_erkale_microEh": -0.93
+    },
+    {
+      "species": "Li-",
+      "E_fem_au": -7.428232061,
+      "E_erkale_au": -7.428231023,
+      "E_gaussian_au": -7.43152,
+      "delta_fem_minus_erkale_microEh": -1.04
+    },
+    {
+      "species": "Be",
+      "E_fem_au": -14.573023168,
+      "E_erkale_au": -14.573021658,
+      "E_gaussian_au": -14.57335,
+      "delta_fem_minus_erkale_microEh": -1.51
+    },
+    {
+      "species": "B+",
+      "E_fem_au": -24.237575184,
+      "E_erkale_au": -24.237566607,
+      "E_gaussian_au": -24.23757,
+      "delta_fem_minus_erkale_microEh": -8.58
+    },
+    {
+      "species": "C-",
+      "E_fem_au": -37.710309470,
+      "E_erkale_au": -37.710305344,
+      "E_gaussian_au": -37.71031,
+      "delta_fem_minus_erkale_microEh": -4.13
+    },
+    {
+      "species": "N",
+      "E_fem_au": -54.404548303,
+      "E_erkale_au": -54.404543006,
+      "E_gaussian_au": -54.40454,
+      "delta_fem_minus_erkale_microEh": -5.3
+    },
+    {
+      "species": "O+",
+      "E_fem_au": -74.377133274,
+      "E_erkale_au": -74.377123988,
+      "E_gaussian_au": -74.37712,
+      "delta_fem_minus_erkale_microEh": -9.29
+    },
+    {
+      "species": "F-",
+      "E_fem_au": -99.459453913,
+      "E_erkale_au": -99.459442803,
+      "E_gaussian_au": -99.45944,
+      "delta_fem_minus_erkale_microEh": -11.11
+    },
+    {
+      "species": "Ne",
+      "E_fem_au": -128.547098109,
+      "E_erkale_au": -128.547079874,
+      "E_gaussian_au": -128.54708,
+      "delta_fem_minus_erkale_microEh": -18.24
+    },
+    {
+      "species": "Na+",
+      "E_fem_au": -161.676962614,
+      "E_erkale_au": -161.676950741,
+      "E_gaussian_au": -161.67695,
+      "delta_fem_minus_erkale_microEh": -11.87
+    },
+    {
+      "species": "Na-",
+      "E_fem_au": -161.855125996,
+      "E_erkale_au": -161.855114256,
+      "E_gaussian_au": -161.85702,
+      "delta_fem_minus_erkale_microEh": -11.74
+    },
+    {
+      "species": "Mg",
+      "E_fem_au": -199.614636424,
+      "E_erkale_au": -199.614623656,
+      "E_gaussian_au": -199.61462,
+      "delta_fem_minus_erkale_microEh": -12.77
+    },
+    {
+      "species": "Al+",
+      "E_fem_au": -241.674670465,
+      "E_erkale_au": -241.674657663,
+      "E_gaussian_au": -241.67466,
+      "delta_fem_minus_erkale_microEh": -12.8
+    },
+    {
+      "species": "Si-",
+      "E_fem_au": -288.890058853,
+      "E_erkale_au": -288.89004456,
+      "E_gaussian_au": -288.89004,
+      "delta_fem_minus_erkale_microEh": -14.29
+    },
+    {
+      "species": "P",
+      "E_fem_au": -340.719275268,
+      "E_erkale_au": -340.719259261,
+      "E_gaussian_au": -340.71926,
+      "delta_fem_minus_erkale_microEh": -16.01
+    },
+    {
+      "species": "S+",
+      "E_fem_au": -397.173947455,
+      "E_erkale_au": -397.17392813,
+      "E_gaussian_au": -397.17393,
+      "delta_fem_minus_erkale_microEh": -19.33
+    },
+    {
+      "species": "Cl-",
+      "E_fem_au": -459.576925268,
+      "E_erkale_au": -459.576907117,
+      "E_gaussian_au": -459.57691,
+      "delta_fem_minus_erkale_microEh": -18.15
+    },
+    {
+      "species": "Ar",
+      "E_fem_au": -526.817512803,
+      "E_erkale_au": -526.817490166,
+      "E_gaussian_au": -526.81749,
+      "delta_fem_minus_erkale_microEh": -22.64
+    }
+  ]
+}

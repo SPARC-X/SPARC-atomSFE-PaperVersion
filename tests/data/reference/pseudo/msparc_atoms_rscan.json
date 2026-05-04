@@ -1,0 +1,445 @@
+[
+  {
+    "element": "He",
+    "xc": "RSCAN",
+    "psp_file": "02.psp8",
+    "psp_source_dir": "/mnt/c/Users/10404/OneDrive/Desktop/DFT/delta_learning/M-SPARC/SG15_number/SG15_number",
+    "Zatom": 2,
+    "Zvalence": 2.0,
+    "NLCC_flag_used": 0,
+    "NLCC_in_psp": 0,
+    "timestamp": "2026-05-04 10:12:02",
+    "Etot": -2.8033173538921323,
+    "Eband": -1.2107225180309011,
+    "Exc": -0.9955730434908726,
+    "Exc_dc": -1.323924864350321,
+    "Eelec_dc": -1.9209466567206794,
+    "n_occupied_states": 1,
+    "occupied_states": [
+      {
+        "state_index": 0,
+        "n": 1,
+        "l": 0,
+        "eigenvalue_up_Ha": -0.6053612590154506,
+        "eigenvalue_down_Ha": -0.6053612590154506,
+        "occupation_up": 1.0,
+        "occupation_down": 1.0
+      }
+    ],
+    "eigenvalues_occupied_up_Ha": [
+      -0.6053612590154506
+    ],
+    "eigenvalues_occupied_down_Ha": [
+      -0.6053612590154506
+    ],
+    "angular_momentum_channels": [
+      0
+    ],
+    "full_spectrum_counts": [
+      399
+    ]
+  },
+  {
+    "element": "N",
+    "xc": "RSCAN",
+    "psp_file": "07.psp8",
+    "psp_source_dir": "/mnt/c/Users/10404/OneDrive/Desktop/DFT/delta_learning/M-SPARC/SG15_number/SG15_number",
+    "Zatom": 7,
+    "Zvalence": 5.0,
+    "NLCC_flag_used": 0,
+    "NLCC_in_psp": 0,
+    "timestamp": "2026-05-04 10:12:10",
+    "Etot": -9.620390518008637,
+    "Eband": -2.2556435141313695,
+    "Exc": -2.1990167429340155,
+    "Exc_dc": -2.9824804453663045,
+    "Eelec_dc": -8.148210706309557,
+    "n_occupied_states": 2,
+    "occupied_states": [
+      {
+        "state_index": 0,
+        "n": 2,
+        "l": 0,
+        "eigenvalue_up_Ha": -0.7293625081419809,
+        "eigenvalue_down_Ha": -0.7293625081419809,
+        "occupation_up": 1.0,
+        "occupation_down": 1.0
+      },
+      {
+        "state_index": 1,
+        "n": 2,
+        "l": 1,
+        "eigenvalue_up_Ha": -0.2656394992824692,
+        "eigenvalue_down_Ha": -0.2656394992824692,
+        "occupation_up": 3.0,
+        "occupation_down": 0.0
+      }
+    ],
+    "eigenvalues_occupied_up_Ha": [
+      -0.7293625081419809,
+      -0.2656394992824692
+    ],
+    "eigenvalues_occupied_down_Ha": [
+      -0.7293625081419809,
+      -0.2656394992824692
+    ],
+    "angular_momentum_channels": [
+      0,
+      1
+    ],
+    "full_spectrum_counts": [
+      399,
+      399
+    ]
+  },
+  {
+    "element": "O",
+    "xc": "RSCAN",
+    "psp_file": "08.psp8",
+    "psp_source_dir": "/mnt/c/Users/10404/OneDrive/Desktop/DFT/delta_learning/M-SPARC/SG15_number/SG15_number",
+    "Zatom": 8,
+    "Zvalence": 6.0,
+    "NLCC_flag_used": 0,
+    "NLCC_in_psp": 0,
+    "timestamp": "2026-05-04 10:12:20",
+    "Etot": -15.701680483670852,
+    "Eband": -3.2536300848087674,
+    "Exc": -3.2298190610430364,
+    "Exc_dc": -4.391369640404633,
+    "Eelec_dc": -13.609600978223682,
+    "n_occupied_states": 2,
+    "occupied_states": [
+      {
+        "state_index": 0,
+        "n": 2,
+        "l": 0,
+        "eigenvalue_up_Ha": -0.9401054269554647,
+        "eigenvalue_down_Ha": -0.9401054269554647,
+        "occupation_up": 1.0,
+        "occupation_down": 1.0
+      },
+      {
+        "state_index": 1,
+        "n": 2,
+        "l": 1,
+        "eigenvalue_up_Ha": -0.3433548077244594,
+        "eigenvalue_down_Ha": -0.3433548077244594,
+        "occupation_up": 3.0,
+        "occupation_down": 1.0
+      }
+    ],
+    "eigenvalues_occupied_up_Ha": [
+      -0.9401054269554647,
+      -0.3433548077244594
+    ],
+    "eigenvalues_occupied_down_Ha": [
+      -0.9401054269554647,
+      -0.3433548077244594
+    ],
+    "angular_momentum_channels": [
+      0,
+      1
+    ],
+    "full_spectrum_counts": [
+      399,
+      399
+    ]
+  },
+  {
+    "element": "Fe",
+    "xc": "RSCAN",
+    "psp_file": "26.psp8",
+    "psp_source_dir": "/mnt/c/Users/10404/OneDrive/Desktop/DFT/delta_learning/M-SPARC/SG15_number/SG15_number",
+    "Zatom": 26,
+    "Zvalence": 16.0,
+    "NLCC_flag_used": 0,
+    "NLCC_in_psp": 0,
+    "timestamp": "2026-05-04 10:12:36",
+    "Etot": -118.00391297947287,
+    "Eband": -23.030646513719187,
+    "Exc": -12.16370344018502,
+    "Exc_dc": -16.725354756822373,
+    "Eelec_dc": -99.53491778239103,
+    "n_occupied_states": 4,
+    "occupied_states": [
+      {
+        "state_index": 0,
+        "n": 3,
+        "l": 0,
+        "eigenvalue_up_Ha": -3.585986872171439,
+        "eigenvalue_down_Ha": -3.585986872171439,
+        "occupation_up": 1.0,
+        "occupation_down": 1.0
+      },
+      {
+        "state_index": 1,
+        "n": 4,
+        "l": 0,
+        "eigenvalue_up_Ha": -0.20300783264344682,
+        "eigenvalue_down_Ha": -0.20300783264344682,
+        "occupation_up": 1.0,
+        "occupation_down": 1.0
+      },
+      {
+        "state_index": 2,
+        "n": 3,
+        "l": 1,
+        "eigenvalue_up_Ha": -2.29353178899554,
+        "eigenvalue_down_Ha": -2.29353178899554,
+        "occupation_up": 3.0,
+        "occupation_down": 3.0
+      },
+      {
+        "state_index": 3,
+        "n": 3,
+        "l": 2,
+        "eigenvalue_up_Ha": -0.2819110616860289,
+        "eigenvalue_down_Ha": -0.2819110616860289,
+        "occupation_up": 5.0,
+        "occupation_down": 1.0
+      }
+    ],
+    "eigenvalues_occupied_up_Ha": [
+      -3.585986872171439,
+      -0.20300783264344682,
+      -2.29353178899554,
+      -0.2819110616860289
+    ],
+    "eigenvalues_occupied_down_Ha": [
+      -3.585986872171439,
+      -0.20300783264344682,
+      -2.29353178899554,
+      -0.2819110616860289
+    ],
+    "angular_momentum_channels": [
+      0,
+      1,
+      2
+    ],
+    "full_spectrum_counts": [
+      399,
+      399,
+      399
+    ]
+  },
+  {
+    "element": "Mn",
+    "xc": "RSCAN",
+    "psp_file": "25.psp8",
+    "psp_source_dir": "/mnt/c/Users/10404/OneDrive/Desktop/DFT/delta_learning/M-SPARC/SG15_number/SG15_number",
+    "Zatom": 25,
+    "Zvalence": 15.0,
+    "NLCC_flag_used": 0,
+    "NLCC_in_psp": 0,
+    "timestamp": "2026-05-04 10:12:58",
+    "Etot": -99.17611342646194,
+    "Eband": -20.720595816348315,
+    "Exc": -10.552541705228844,
+    "Exc_dc": -14.487885891047664,
+    "Eelec_dc": -82.39086179593245,
+    "n_occupied_states": 4,
+    "occupied_states": [
+      {
+        "state_index": 0,
+        "n": 3,
+        "l": 0,
+        "eigenvalue_up_Ha": -3.2791609863659663,
+        "eigenvalue_down_Ha": -3.2791609863659663,
+        "occupation_up": 1.0,
+        "occupation_down": 1.0
+      },
+      {
+        "state_index": 1,
+        "n": 4,
+        "l": 0,
+        "eigenvalue_up_Ha": -0.19591660950327336,
+        "eigenvalue_down_Ha": -0.19591660950327336,
+        "occupation_up": 1.0,
+        "occupation_down": 1.0
+      },
+      {
+        "state_index": 2,
+        "n": 3,
+        "l": 1,
+        "eigenvalue_up_Ha": -2.0852192180127056,
+        "eigenvalue_down_Ha": -2.0852192180127056,
+        "occupation_up": 3.0,
+        "occupation_down": 3.0
+      },
+      {
+        "state_index": 3,
+        "n": 3,
+        "l": 2,
+        "eigenvalue_up_Ha": -0.2518250633067201,
+        "eigenvalue_down_Ha": -0.2518250633067201,
+        "occupation_up": 5.0,
+        "occupation_down": 0.0
+      }
+    ],
+    "eigenvalues_occupied_up_Ha": [
+      -3.2791609863659663,
+      -0.19591660950327336,
+      -2.0852192180127056,
+      -0.2518250633067201
+    ],
+    "eigenvalues_occupied_down_Ha": [
+      -3.2791609863659663,
+      -0.19591660950327336,
+      -2.0852192180127056,
+      -0.2518250633067201
+    ],
+    "angular_momentum_channels": [
+      0,
+      1,
+      2
+    ],
+    "full_spectrum_counts": [
+      399,
+      399,
+      399
+    ]
+  },
+  {
+    "element": "Mo",
+    "xc": "RSCAN",
+    "psp_file": "42.psp8",
+    "psp_source_dir": "/mnt/c/Users/10404/OneDrive/Desktop/DFT/delta_learning/M-SPARC/SG15_number/SG15_number",
+    "Zatom": 42,
+    "Zvalence": 14.0,
+    "NLCC_flag_used": 0,
+    "NLCC_in_psp": 0,
+    "timestamp": "2026-05-04 10:13:15",
+    "Etot": -68.16700473991288,
+    "Eband": -14.581518628452987,
+    "Exc": -7.585772795874599,
+    "Exc_dc": -10.36377954406144,
+    "Eelec_dc": -56.36349285964673,
+    "n_occupied_states": 4,
+    "occupied_states": [
+      {
+        "state_index": 0,
+        "n": 4,
+        "l": 0,
+        "eigenvalue_up_Ha": -2.4566593586329857,
+        "eigenvalue_down_Ha": -2.4566593586329857,
+        "occupation_up": 1.0,
+        "occupation_down": 1.0
+      },
+      {
+        "state_index": 1,
+        "n": 5,
+        "l": 0,
+        "eigenvalue_up_Ha": -0.1541641463070618,
+        "eigenvalue_down_Ha": -0.1541641463070618,
+        "occupation_up": 1.0,
+        "occupation_down": 0.0
+      },
+      {
+        "state_index": 2,
+        "n": 4,
+        "l": 1,
+        "eigenvalue_up_Ha": -1.4698058484888017,
+        "eigenvalue_down_Ha": -1.4698058484888017,
+        "occupation_up": 3.0,
+        "occupation_down": 3.0
+      },
+      {
+        "state_index": 3,
+        "n": 4,
+        "l": 2,
+        "eigenvalue_up_Ha": -0.13904013478942873,
+        "eigenvalue_down_Ha": -0.13904013478942873,
+        "occupation_up": 5.0,
+        "occupation_down": 0.0
+      }
+    ],
+    "eigenvalues_occupied_up_Ha": [
+      -2.4566593586329857,
+      -0.1541641463070618,
+      -1.4698058484888017,
+      -0.13904013478942873
+    ],
+    "eigenvalues_occupied_down_Ha": [
+      -2.4566593586329857,
+      -0.1541641463070618,
+      -1.4698058484888017,
+      -0.13904013478942873
+    ],
+    "angular_momentum_channels": [
+      0,
+      1,
+      2
+    ],
+    "full_spectrum_counts": [
+      399,
+      399,
+      399
+    ]
+  },
+  {
+    "element": "Cs",
+    "xc": "RSCAN",
+    "psp_file": "55.psp8",
+    "psp_source_dir": "/mnt/c/Users/10404/OneDrive/Desktop/DFT/delta_learning/M-SPARC/SG15_number/SG15_number",
+    "Zatom": 55,
+    "Zvalence": 9.0,
+    "NLCC_flag_used": 0,
+    "NLCC_in_psp": 0,
+    "timestamp": "2026-05-04 10:16:02",
+    "Etot": -20.179656184583216,
+    "Eband": -5.235904340319737,
+    "Exc": -3.1177725510191556,
+    "Exc_dc": -4.189011125103386,
+    "Eelec_dc": -16.014990418347708,
+    "n_occupied_states": 3,
+    "occupied_states": [
+      {
+        "state_index": 0,
+        "n": 5,
+        "l": 0,
+        "eigenvalue_up_Ha": -1.0231238797036002,
+        "eigenvalue_down_Ha": -1.0231238797036002,
+        "occupation_up": 1.0,
+        "occupation_down": 1.0
+      },
+      {
+        "state_index": 1,
+        "n": 6,
+        "l": 0,
+        "eigenvalue_up_Ha": -0.07643677105642045,
+        "eigenvalue_down_Ha": -0.07643677105642045,
+        "occupation_up": 1.0,
+        "occupation_down": 0.0
+      },
+      {
+        "state_index": 2,
+        "n": 5,
+        "l": 1,
+        "eigenvalue_up_Ha": -0.5188699683093527,
+        "eigenvalue_down_Ha": -0.5188699683093527,
+        "occupation_up": 3.0,
+        "occupation_down": 3.0
+      }
+    ],
+    "eigenvalues_occupied_up_Ha": [
+      -1.0231238797036002,
+      -0.07643677105642045,
+      -0.5188699683093527
+    ],
+    "eigenvalues_occupied_down_Ha": [
+      -1.0231238797036002,
+      -0.07643677105642045,
+      -0.5188699683093527
+    ],
+    "angular_momentum_channels": [
+      0,
+      1,
+      2
+    ],
+    "full_spectrum_counts": [
+      399,
+      399,
+      399
+    ]
+  }
+]

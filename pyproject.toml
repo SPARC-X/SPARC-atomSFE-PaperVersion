@@ -1,0 +1,95 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SPARC-atomSFE"
+version = "0.1.0"
+description = "SPARC-atomSFE: Atomic DFT solver using Spectrum Finite Element (SFE) method"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "GNU GPLv3"}
+authors = [
+    {name = "Qihao Cheng", email = "qcheng61@gatech.edu"},
+    {name = "Shubhang Trivedi", email = "strivedi44@gatech.edu"},
+    {name = "Phanish Suryanarayana", email = "phanish.suryanarayana@ce.gatech.edu"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+# Core dependencies - required for basic functionality
+dependencies = [
+    "numpy>=1.20.0",
+    "scipy>=1.7.0",
+]
+
+[project.optional-dependencies]
+# Development dependencies - for testing and development
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=3.0.0",
+    "nbconvert>=6.0.0",
+    "jupyter>=1.0.0",
+    "ipykernel>=6.0.0",
+]
+
+# Machine learning dependencies - for ML XC functionals
+ml = [
+    "torch>=1.9.0",
+    "scikit-learn>=0.24.0",
+]
+
+# Visualization dependencies - for plotting and visualization
+viz = [
+    "matplotlib>=3.3.0",
+]
+
+# Thread pool control - for parallel RPA calculations
+threadpool = [
+    "threadpoolctl>=2.0.0",
+]
+
+# All optional dependencies combined
+all = [
+    "pytest>=7.0.0",
+    "pytest-cov>=3.0.0",
+    "nbconvert>=6.0.0",
+    "jupyter>=1.0.0",
+    "ipykernel>=6.0.0",
+    "torch>=1.9.0",
+    "scikit-learn>=0.24.0",
+    "matplotlib>=3.3.0",
+    "threadpoolctl>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/phanish-suryanarayana/atom"
+Documentation = "https://github.com/phanish-suryanarayana/atom#readme"
+Repository = "https://github.com/phanish-suryanarayana/atom"
+Issues = "https://github.com/phanish-suryanarayana/atom/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["atom", "atom.*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+markers = [
+    "smoke: end-to-end smoke tests for solver workflows",
+]

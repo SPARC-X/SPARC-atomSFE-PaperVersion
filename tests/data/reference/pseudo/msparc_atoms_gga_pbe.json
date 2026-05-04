@@ -1,0 +1,569 @@
+{
+  "xc": "GGA_PBE",
+  "format": "msparc_atoms_occupied_only_v1",
+  "source": "dataset/GGA_PBE/<element>/data/atom_dataset.json",
+  "elements": {
+    "He": {
+      "meta": {
+        "element": "He",
+        "xc": "GGA_PBE",
+        "psp_file": "02_He_2_1.1_1.2_pbe_v1.0.psp8",
+        "Zatom": 2,
+        "Zvalence": 2.0,
+        "NLCC_flag_used": 0,
+        "NLCC_in_psp": 0,
+        "timestamp": "2026-05-03 07:30:52"
+      },
+      "energies_Ha": {
+        "Etot": -2.853330926415577,
+        "Eband": -1.1586215703334581,
+        "Exc": -1.0162005932668006,
+        "Exc_dc": -1.3024175261751936,
+        "Eelec_dc": -1.9809262889905122
+      },
+      "occupied_states": [
+        {
+          "state_index": 0,
+          "n": 1,
+          "l": 0,
+          "eigenvalue_up_Ha": -0.5793107851667291,
+          "eigenvalue_down_Ha": -0.5793107851667291,
+          "occupation_up": 1.0,
+          "occupation_down": 1.0
+        }
+      ],
+      "shell_n": {
+        "l0": [
+          1
+        ],
+        "l1": [],
+        "l2": [],
+        "l3": []
+      },
+      "occupation_up_shell": {
+        "l0": [
+          1.0
+        ],
+        "l1": [],
+        "l2": [],
+        "l3": []
+      },
+      "occupation_down_shell": {
+        "l0": [
+          1.0
+        ],
+        "l1": [],
+        "l2": [],
+        "l3": []
+      }
+    },
+    "N": {
+      "meta": {
+        "element": "N",
+        "xc": "GGA_PBE",
+        "psp_file": "07_N_5_1.2_1.4_pbe_n_v1.0.psp8",
+        "Zatom": 7,
+        "Zvalence": 5.0,
+        "NLCC_flag_used": 1,
+        "NLCC_in_psp": 1,
+        "timestamp": "2026-05-03 07:30:53"
+      },
+      "energies_Ha": {
+        "Etot": -10.05930011739635,
+        "Eband": -2.147480920676026,
+        "Exc": -2.7208666803393005,
+        "Exc_dc": -2.949235370387723,
+        "Eelec_dc": -8.140187886768748
+      },
+      "occupied_states": [
+        {
+          "state_index": 0,
+          "n": 2,
+          "l": 0,
+          "eigenvalue_up_Ha": -0.6829144462484715,
+          "eigenvalue_down_Ha": -0.6829144462484715,
+          "occupation_up": 1.0,
+          "occupation_down": 1.0
+        },
+        {
+          "state_index": 1,
+          "n": 2,
+          "l": 1,
+          "eigenvalue_up_Ha": -0.2605506760596943,
+          "eigenvalue_down_Ha": -0.2605506760596943,
+          "occupation_up": 3.0,
+          "occupation_down": 0.0
+        }
+      ],
+      "shell_n": {
+        "l0": [
+          2
+        ],
+        "l1": [
+          2
+        ],
+        "l2": [],
+        "l3": []
+      },
+      "occupation_up_shell": {
+        "l0": [
+          1.0
+        ],
+        "l1": [
+          3.0
+        ],
+        "l2": [],
+        "l3": []
+      },
+      "occupation_down_shell": {
+        "l0": [
+          1.0
+        ],
+        "l1": [
+          0.0
+        ],
+        "l2": [],
+        "l3": []
+      }
+    },
+    "O": {
+      "meta": {
+        "element": "O",
+        "xc": "GGA_PBE",
+        "psp_file": "08_O_6_1.2_1.4_pbe_n_v1.0.psp8",
+        "Zatom": 8,
+        "Zvalence": 6.0,
+        "NLCC_flag_used": 1,
+        "NLCC_in_psp": 1,
+        "timestamp": "2026-05-03 07:30:53"
+      },
+      "energies_Ha": {
+        "Etot": -16.273706327254086,
+        "Eband": -3.0886409638470105,
+        "Exc": -3.8982461321542496,
+        "Exc_dc": -4.291474405843068,
+        "Eelec_dc": -13.578293637095893
+      },
+      "occupied_states": [
+        {
+          "state_index": 0,
+          "n": 2,
+          "l": 0,
+          "eigenvalue_up_Ha": -0.8805761706025326,
+          "eigenvalue_down_Ha": -0.8805761706025326,
+          "occupation_up": 1.0,
+          "occupation_down": 1.0
+        },
+        {
+          "state_index": 1,
+          "n": 2,
+          "l": 1,
+          "eigenvalue_up_Ha": -0.33187215566048633,
+          "eigenvalue_down_Ha": -0.33187215566048633,
+          "occupation_up": 3.0,
+          "occupation_down": 1.0
+        }
+      ],
+      "shell_n": {
+        "l0": [
+          2
+        ],
+        "l1": [
+          2
+        ],
+        "l2": [],
+        "l3": []
+      },
+      "occupation_up_shell": {
+        "l0": [
+          1.0
+        ],
+        "l1": [
+          3.0
+        ],
+        "l2": [],
+        "l3": []
+      },
+      "occupation_down_shell": {
+        "l0": [
+          1.0
+        ],
+        "l1": [
+          1.0
+        ],
+        "l2": [],
+        "l3": []
+      }
+    },
+    "Fe": {
+      "meta": {
+        "element": "Fe",
+        "xc": "GGA_PBE",
+        "psp_file": "26_Fe_16_2.0_2.5_pbe_n_v1.0.psp8",
+        "Zatom": 26,
+        "Zvalence": 16.0,
+        "NLCC_flag_used": 1,
+        "NLCC_in_psp": 1,
+        "timestamp": "2026-05-03 07:30:55"
+      },
+      "energies_Ha": {
+        "Etot": -116.77884031386245,
+        "Eband": -22.1931350365061,
+        "Exc": -15.215561273077974,
+        "Exc_dc": -15.866966107563083,
+        "Eelec_dc": -95.23711011184146
+      },
+      "occupied_states": [
+        {
+          "state_index": 0,
+          "n": 3,
+          "l": 0,
+          "eigenvalue_up_Ha": -3.4550774247396765,
+          "eigenvalue_down_Ha": -3.4550774247396765,
+          "occupation_up": 1.0,
+          "occupation_down": 1.0
+        },
+        {
+          "state_index": 1,
+          "n": 4,
+          "l": 0,
+          "eigenvalue_up_Ha": -0.19448225356973545,
+          "eigenvalue_down_Ha": -0.19448225356973545,
+          "occupation_up": 1.0,
+          "occupation_down": 1.0
+        },
+        {
+          "state_index": 2,
+          "n": 3,
+          "l": 1,
+          "eigenvalue_up_Ha": -2.20653458634942,
+          "eigenvalue_down_Ha": -2.20653458634942,
+          "occupation_up": 3.0,
+          "occupation_down": 3.0
+        },
+        {
+          "state_index": 3,
+          "n": 3,
+          "l": 2,
+          "eigenvalue_up_Ha": -0.27580136029845903,
+          "eigenvalue_down_Ha": -0.27580136029845903,
+          "occupation_up": 5.0,
+          "occupation_down": 1.0
+        }
+      ],
+      "shell_n": {
+        "l0": [
+          3,
+          4
+        ],
+        "l1": [
+          3
+        ],
+        "l2": [
+          3
+        ],
+        "l3": []
+      },
+      "occupation_up_shell": {
+        "l0": [
+          1.0,
+          1.0
+        ],
+        "l1": [
+          3.0
+        ],
+        "l2": [
+          5.0
+        ],
+        "l3": []
+      },
+      "occupation_down_shell": {
+        "l0": [
+          1.0,
+          1.0
+        ],
+        "l1": [
+          3.0
+        ],
+        "l2": [
+          1.0
+        ],
+        "l3": []
+      }
+    },
+    "Mn": {
+      "meta": {
+        "element": "Mn",
+        "xc": "GGA_PBE",
+        "psp_file": "25_Mn_15_1.8_2.3_pbe_n_v1.0.psp8",
+        "Zatom": 25,
+        "Zvalence": 15.0,
+        "NLCC_flag_used": 1,
+        "NLCC_in_psp": 1,
+        "timestamp": "2026-05-03 07:30:56"
+      },
+      "energies_Ha": {
+        "Etot": -105.36601579785231,
+        "Eband": -19.96915592539701,
+        "Exc": -16.596132633006754,
+        "Exc_dc": -15.078180034363218,
+        "Eelec_dc": -83.87890727381176
+      },
+      "occupied_states": [
+        {
+          "state_index": 0,
+          "n": 3,
+          "l": 0,
+          "eigenvalue_up_Ha": -3.1560102451585865,
+          "eigenvalue_down_Ha": -3.1560102451585865,
+          "occupation_up": 1.0,
+          "occupation_down": 1.0
+        },
+        {
+          "state_index": 1,
+          "n": 4,
+          "l": 0,
+          "eigenvalue_up_Ha": -0.1876868384920906,
+          "eigenvalue_down_Ha": -0.1876868384920906,
+          "occupation_up": 1.0,
+          "occupation_down": 1.0
+        },
+        {
+          "state_index": 2,
+          "n": 3,
+          "l": 1,
+          "eigenvalue_up_Ha": -2.0062650427363695,
+          "eigenvalue_down_Ha": -2.0062650427363695,
+          "occupation_up": 3.0,
+          "occupation_down": 3.0
+        },
+        {
+          "state_index": 3,
+          "n": 3,
+          "l": 2,
+          "eigenvalue_up_Ha": -0.24883430033548862,
+          "eigenvalue_down_Ha": -0.24883430033548862,
+          "occupation_up": 5.0,
+          "occupation_down": 0.0
+        }
+      ],
+      "shell_n": {
+        "l0": [
+          3,
+          4
+        ],
+        "l1": [
+          3
+        ],
+        "l2": [
+          3
+        ],
+        "l3": []
+      },
+      "occupation_up_shell": {
+        "l0": [
+          1.0,
+          1.0
+        ],
+        "l1": [
+          3.0
+        ],
+        "l2": [
+          5.0
+        ],
+        "l3": []
+      },
+      "occupation_down_shell": {
+        "l0": [
+          1.0,
+          1.0
+        ],
+        "l1": [
+          3.0
+        ],
+        "l2": [
+          0.0
+        ],
+        "l3": []
+      }
+    },
+    "Mo": {
+      "meta": {
+        "element": "Mo",
+        "xc": "GGA_PBE",
+        "psp_file": "42_Mo_14_2.0_2.6_pbe_n_v1.0.psp8",
+        "Zatom": 42,
+        "Zvalence": 14.0,
+        "NLCC_flag_used": 1,
+        "NLCC_in_psp": 1,
+        "timestamp": "2026-05-03 07:30:58"
+      },
+      "energies_Ha": {
+        "Etot": -69.67942912498049,
+        "Eband": -14.055145087446238,
+        "Exc": -9.958055178846177,
+        "Exc_dc": -10.306268716010015,
+        "Eelec_dc": -55.97249757469808
+      },
+      "occupied_states": [
+        {
+          "state_index": 0,
+          "n": 4,
+          "l": 0,
+          "eigenvalue_up_Ha": -2.3647130380811734,
+          "eigenvalue_down_Ha": -2.3647130380811734,
+          "occupation_up": 1.0,
+          "occupation_down": 1.0
+        },
+        {
+          "state_index": 1,
+          "n": 5,
+          "l": 0,
+          "eigenvalue_up_Ha": -0.1501814347123309,
+          "eigenvalue_down_Ha": -0.1501814347123309,
+          "occupation_up": 1.0,
+          "occupation_down": 0.0
+        },
+        {
+          "state_index": 2,
+          "n": 4,
+          "l": 1,
+          "eigenvalue_up_Ha": -1.4143210435828604,
+          "eigenvalue_down_Ha": -1.4143210435828604,
+          "occupation_up": 3.0,
+          "occupation_down": 3.0
+        },
+        {
+          "state_index": 3,
+          "n": 4,
+          "l": 2,
+          "eigenvalue_up_Ha": -0.1379222630148798,
+          "eigenvalue_down_Ha": -0.1379222630148798,
+          "occupation_up": 5.0,
+          "occupation_down": 0.0
+        }
+      ],
+      "shell_n": {
+        "l0": [
+          4,
+          5
+        ],
+        "l1": [
+          4
+        ],
+        "l2": [
+          4
+        ],
+        "l3": []
+      },
+      "occupation_up_shell": {
+        "l0": [
+          1.0,
+          1.0
+        ],
+        "l1": [
+          3.0
+        ],
+        "l2": [
+          5.0
+        ],
+        "l3": []
+      },
+      "occupation_down_shell": {
+        "l0": [
+          1.0,
+          0.0
+        ],
+        "l1": [
+          3.0
+        ],
+        "l2": [
+          0.0
+        ],
+        "l3": []
+      }
+    },
+    "Cs": {
+      "meta": {
+        "element": "Cs",
+        "xc": "GGA_PBE",
+        "psp_file": "55_Cs_9_2.2_2.5_pbe_n_v1.0.psp8",
+        "Zatom": 55,
+        "Zvalence": 9.0,
+        "NLCC_flag_used": 1,
+        "NLCC_in_psp": 1,
+        "timestamp": "2026-05-03 07:31:00"
+      },
+      "energies_Ha": {
+        "Etot": -23.249842309917142,
+        "Eband": -5.022177322847721,
+        "Exc": -6.684632880417476,
+        "Exc_dc": -4.528574611282789,
+        "Eelec_dc": -16.07160671793473
+      },
+      "occupied_states": [
+        {
+          "state_index": 0,
+          "n": 5,
+          "l": 0,
+          "eigenvalue_up_Ha": -0.9823891145010807,
+          "eigenvalue_down_Ha": -0.9823891145010807,
+          "occupation_up": 1.0,
+          "occupation_down": 1.0
+        },
+        {
+          "state_index": 1,
+          "n": 6,
+          "l": 0,
+          "eigenvalue_up_Ha": -0.07666948674130156,
+          "eigenvalue_down_Ha": -0.07666948674130156,
+          "occupation_up": 1.0,
+          "occupation_down": 0.0
+        },
+        {
+          "state_index": 2,
+          "n": 5,
+          "l": 1,
+          "eigenvalue_up_Ha": -0.4967882678507098,
+          "eigenvalue_down_Ha": -0.4967882678507098,
+          "occupation_up": 3.0,
+          "occupation_down": 3.0
+        }
+      ],
+      "shell_n": {
+        "l0": [
+          5,
+          6
+        ],
+        "l1": [
+          5
+        ],
+        "l2": [],
+        "l3": []
+      },
+      "occupation_up_shell": {
+        "l0": [
+          1.0,
+          1.0
+        ],
+        "l1": [
+          3.0
+        ],
+        "l2": [],
+        "l3": []
+      },
+      "occupation_down_shell": {
+        "l0": [
+          1.0,
+          0.0
+        ],
+        "l1": [
+          3.0
+        ],
+        "l2": [],
+        "l3": []
+      }
+    }
+  },
+  "missing_atom_dataset": []
+}

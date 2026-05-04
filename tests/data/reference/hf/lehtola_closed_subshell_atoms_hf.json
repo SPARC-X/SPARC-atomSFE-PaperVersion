@@ -1,0 +1,186 @@
+{
+  "citation": "Cinal, M. Journal of Mathematical Chemistry 58(8), 1571-1600 (2020).",
+  "source": "Table 2 (closed-shell / closed-subshell atoms, He through No).",
+  "records": [
+    {
+      "Z": 2,
+      "atom": "He",
+      "minus_E_tot_au": 2.8616799956122,
+      "minus_E_x_au": 1.0257688698996,
+      "q_vir_minus_2_times_1e14": -0.6,
+      "q_vir_alt_minus_2_times_1e14": 0.6,
+      "minus_epsilon_homo_au": 0.917955562856,
+      "homo_orbital": "1s"
+    },
+    {
+      "Z": 4,
+      "atom": "Be",
+      "minus_E_tot_au": 14.573023168316,
+      "minus_E_x_au": 2.6669136693896,
+      "q_vir_minus_2_times_1e14": -0.1,
+      "q_vir_alt_minus_2_times_1e14": -0.1,
+      "minus_epsilon_homo_au": 0.309269551573,
+      "homo_orbital": "2s"
+    },
+    {
+      "Z": 10,
+      "atom": "Ne",
+      "minus_E_tot_au": 128.54709810938,
+      "minus_E_x_au": 12.108350731165,
+      "q_vir_minus_2_times_1e14": 0.4,
+      "q_vir_alt_minus_2_times_1e14": 0.8,
+      "minus_epsilon_homo_au": 0.850409650347,
+      "homo_orbital": "2p"
+    },
+    {
+      "Z": 12,
+      "atom": "Mg",
+      "minus_E_tot_au": 199.61463642451,
+      "minus_E_x_au": 15.994291686941,
+      "q_vir_minus_2_times_1e14": 0.3,
+      "q_vir_alt_minus_2_times_1e14": 1.2,
+      "minus_epsilon_homo_au": 0.253052582006,
+      "homo_orbital": "3s"
+    },
+    {
+      "Z": 18,
+      "atom": "Ar",
+      "minus_E_tot_au": 526.81751280272,
+      "minus_E_x_au": 30.184941987307,
+      "q_vir_minus_2_times_1e14": 0.4,
+      "q_vir_alt_minus_2_times_1e14": 1.1,
+      "minus_epsilon_homo_au": 0.591017409350,
+      "homo_orbital": "3p"
+    },
+    {
+      "Z": 20,
+      "atom": "Ca",
+      "minus_E_tot_au": 676.75818592451,
+      "minus_E_x_au": 35.211208505169,
+      "q_vir_minus_2_times_1e14": 0.2,
+      "q_vir_alt_minus_2_times_1e14": 0.8,
+      "minus_epsilon_homo_au": 0.195529692468,
+      "homo_orbital": "4s"
+    },
+    {
+      "Z": 30,
+      "atom": "Zn",
+      "minus_E_tot_au": 1777.8481161914,
+      "minus_E_x_au": 69.641197954041,
+      "q_vir_minus_2_times_1e14": 0.4,
+      "q_vir_alt_minus_2_times_1e14": 1.2,
+      "minus_epsilon_homo_au": 0.292507146403,
+      "homo_orbital": "4s"
+    },
+    {
+      "Z": 36,
+      "atom": "Kr",
+      "minus_E_tot_au": 2752.0549773456,
+      "minus_E_x_au": 93.855996003544,
+      "q_vir_minus_2_times_1e14": 0.5,
+      "q_vir_alt_minus_2_times_1e14": 1.7,
+      "minus_epsilon_homo_au": 0.524186681027,
+      "homo_orbital": "4p"
+    },
+    {
+      "Z": 38,
+      "atom": "Sr",
+      "minus_E_tot_au": 3131.5456864385,
+      "minus_E_x_au": 101.95008327048,
+      "q_vir_minus_2_times_1e14": 0.4,
+      "q_vir_alt_minus_2_times_1e14": 1.5,
+      "minus_epsilon_homo_au": 0.178456446851,
+      "homo_orbital": "5s"
+    },
+    {
+      "Z": 46,
+      "atom": "Pd",
+      "minus_E_tot_au": 4937.9210240701,
+      "minus_E_x_au": 139.1429137267,
+      "q_vir_minus_2_times_1e14": 0.4,
+      "q_vir_alt_minus_2_times_1e14": 1.0,
+      "minus_epsilon_homo_au": 0.336002013666,
+      "homo_orbital": "4d"
+    },
+    {
+      "Z": 48,
+      "atom": "Cd",
+      "minus_E_tot_au": 5465.1331425301,
+      "minus_E_x_au": 148.91425132913,
+      "q_vir_minus_2_times_1e14": 0.3,
+      "q_vir_alt_minus_2_times_1e14": 1.2,
+      "minus_epsilon_homo_au": 0.264855912554,
+      "homo_orbital": "5s"
+    },
+    {
+      "Z": 54,
+      "atom": "Xe",
+      "minus_E_tot_au": 7232.1383638718,
+      "minus_E_x_au": 179.09710936688,
+      "q_vir_minus_2_times_1e14": 0.1,
+      "q_vir_alt_minus_2_times_1e14": 1.0,
+      "minus_epsilon_homo_au": 0.457290057852,
+      "homo_orbital": "5p"
+    },
+    {
+      "Z": 56,
+      "atom": "Ba",
+      "minus_E_tot_au": 7883.5438273305,
+      "minus_E_x_au": 189.10024984151,
+      "q_vir_minus_2_times_1e14": -0.2,
+      "q_vir_alt_minus_2_times_1e14": 0.7,
+      "minus_epsilon_homo_au": 0.157527698637,
+      "homo_orbital": "6s"
+    },
+    {
+      "Z": 70,
+      "atom": "Yb",
+      "minus_E_tot_au": 13391.456193118,
+      "minus_E_x_au": 276.21383922647,
+      "q_vir_minus_2_times_1e14": -0.5,
+      "q_vir_alt_minus_2_times_1e14": -0.1,
+      "minus_epsilon_homo_au": 0.182462522225,
+      "homo_orbital": "6s"
+    },
+    {
+      "Z": 80,
+      "atom": "Hg",
+      "minus_E_tot_au": 18408.991494945,
+      "minus_E_x_au": 345.30351638287,
+      "q_vir_minus_2_times_1e14": -0.5,
+      "q_vir_alt_minus_2_times_1e14": 0.1,
+      "minus_epsilon_homo_au": 0.261046014188,
+      "homo_orbital": "6s"
+    },
+    {
+      "Z": 86,
+      "atom": "Rn",
+      "minus_E_tot_au": 21866.772240873,
+      "minus_E_x_au": 387.50377379085,
+      "q_vir_minus_2_times_1e14": -0.2,
+      "q_vir_alt_minus_2_times_1e14": -0.6,
+      "minus_epsilon_homo_au": 0.428006769677,
+      "homo_orbital": "6p"
+    },
+    {
+      "Z": 88,
+      "atom": "Ra",
+      "minus_E_tot_au": 23094.303666425,
+      "minus_E_x_au": 401.41484743009,
+      "q_vir_minus_2_times_1e14": -0.5,
+      "q_vir_alt_minus_2_times_1e14": -0.1,
+      "minus_epsilon_homo_au": 0.148771196734,
+      "homo_orbital": "7s"
+    },
+    {
+      "Z": 102,
+      "atom": "No",
+      "minus_E_tot_au": 32789.512140444,
+      "minus_E_x_au": 511.99383055408,
+      "q_vir_minus_2_times_1e14": -0.4,
+      "q_vir_alt_minus_2_times_1e14": 0.1,
+      "minus_epsilon_homo_au": 0.170481588708,
+      "homo_orbital": "7s"
+    }
+  ]
+}

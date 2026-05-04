@@ -1,0 +1,5597 @@
+{
+  "generation_parameters": {
+    "xc_functional": "XC_GGA_X_PBE+XC_GGA_C_PBE",
+    "wtau_mode": false,
+    "spin_polarization": "unpolarized",
+    "relativistic_mode": "nonrelativistic",
+    "grid_points": 8001,
+    "grid_rmax": 40.0,
+    "splr0": "default",
+    "splns": "default",
+    "unit_note": "Original summary energies are Ry-like; values here are converted by dividing by 2 (Ry -> Ha)."
+  },
+  "atoms": [
+    {
+      "symbol": "H",
+      "atomic_number": 1,
+      "converged": true,
+      "total_energy_ha": -0.4589285972565953,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 1,
+          "energy_ha": -0.2385999
+        }
+      ]
+    },
+    {
+      "symbol": "He",
+      "atomic_number": 2,
+      "converged": true,
+      "total_energy_ha": -2.8929348669732287,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.5792907
+        }
+      ]
+    },
+    {
+      "symbol": "Li",
+      "atomic_number": 3,
+      "converged": true,
+      "total_energy_ha": -7.451372041788705,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.9054568
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 1,
+          "energy_ha": -0.10561678
+        }
+      ]
+    },
+    {
+      "symbol": "Be",
+      "atomic_number": 4,
+      "converged": true,
+      "total_energy_ha": -14.629947715792262,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3.902611
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.206120435
+        }
+      ]
+    },
+    {
+      "symbol": "B",
+      "atomic_number": 5,
+      "converged": true,
+      "total_energy_ha": -24.595576456140115,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -6.634628
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.34686536
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 1,
+          "energy_ha": -0.13261801
+        }
+      ]
+    },
+    {
+      "symbol": "C",
+      "atomic_number": 6,
+      "converged": true,
+      "total_energy_ha": -37.748208780563665,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -10.042041
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.5049008
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 2,
+          "energy_ha": -0.1943531
+        }
+      ]
+    },
+    {
+      "symbol": "N",
+      "atomic_number": 7,
+      "converged": true,
+      "total_energy_ha": -54.42099651079251,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -14.1292485
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.68198175
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 3,
+          "energy_ha": -0.26072504
+        }
+      ]
+    },
+    {
+      "symbol": "O",
+      "atomic_number": 8,
+      "converged": true,
+      "total_energy_ha": -74.94519273931114,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -18.898644
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.8788478
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 4,
+          "energy_ha": -0.33212763
+        }
+      ]
+    },
+    {
+      "symbol": "F",
+      "atomic_number": 9,
+      "converged": true,
+      "total_energy_ha": -99.65070096631885,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -24.3516835
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.0958541
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 5,
+          "energy_ha": -0.40870414
+        }
+      ]
+    },
+    {
+      "symbol": "Ne",
+      "atomic_number": 10,
+      "converged": true,
+      "total_energy_ha": -128.8664277397368,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -30.489336
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.3331844
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.49050377
+        }
+      ]
+    },
+    {
+      "symbol": "Na",
+      "atomic_number": 11,
+      "converged": true,
+      "total_energy_ha": -162.16459446180795,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -37.9253755
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.0784615
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 1,
+          "energy_ha": -0.100719525
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.05468365
+        }
+      ]
+    },
+    {
+      "symbol": "Mg",
+      "atomic_number": 12,
+      "converged": true,
+      "total_energy_ha": -199.95511516074035,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -46.2008555
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.92348085
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.17268076
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.71456315
+        }
+      ]
+    },
+    {
+      "symbol": "Al",
+      "atomic_number": 13,
+      "converged": true,
+      "total_energy_ha": -242.22496404632892,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -55.406255
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3.95851635
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.284083635
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -2.5608044
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 1,
+          "energy_ha": -0.099954745
+        }
+      ]
+    },
+    {
+      "symbol": "Si",
+      "atomic_number": 14,
+      "converged": true,
+      "total_energy_ha": -289.20275288025425,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -65.4575
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -5.102405
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.395730545
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -3.5128989
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 2,
+          "energy_ha": -0.15031696
+        }
+      ]
+    },
+    {
+      "symbol": "P",
+      "atomic_number": 15,
+      "converged": true,
+      "total_energy_ha": -341.04698428520845,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -76.357945
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -6.359876
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.51064255
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -4.57557205
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 3,
+          "energy_ha": -0.20276597
+        }
+      ]
+    },
+    {
+      "symbol": "S",
+      "atomic_number": 16,
+      "converged": true,
+      "total_energy_ha": -397.91481446004315,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -88.10891
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -7.7330895
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.63000985
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -5.7509305
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 4,
+          "energy_ha": -0.258025625
+        }
+      ]
+    },
+    {
+      "symbol": "Cl",
+      "atomic_number": 17,
+      "converged": true,
+      "total_energy_ha": -459.96258852493736,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -100.711025
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -9.2232185
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.75442435
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -7.0400945
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 5,
+          "energy_ha": -0.31639436
+        }
+      ]
+    },
+    {
+      "symbol": "Ar",
+      "atomic_number": 18,
+      "converged": true,
+      "total_energy_ha": -527.3461287829556,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -114.16464
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -10.830975
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.88422215
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -8.4437315
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.37801138
+        }
+      ]
+    },
+    {
+      "symbol": "K",
+      "atomic_number": 19,
+      "converged": true,
+      "total_energy_ha": -599.7048495024645,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -128.80478
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -12.8803005
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.28768295
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 1,
+          "energy_ha": -0.084938705
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -10.2872555
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.6926241
+        }
+      ]
+    },
+    {
+      "symbol": "Ca",
+      "atomic_number": 20,
+      "converged": true,
+      "total_energy_ha": -677.3488191400994,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -144.349475
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -15.091756
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.7156866
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.137930965
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -12.2910225
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.0311492
+        }
+      ]
+    },
+    {
+      "symbol": "Sc",
+      "atomic_number": 21,
+      "converged": true,
+      "total_energy_ha": -760.3846513083968,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -160.62391
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -17.255622
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.000156
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.1525662
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -14.248557
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.23501805
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 1,
+          "energy_ha": -0.12380216
+        }
+      ]
+    },
+    {
+      "symbol": "Ti",
+      "atomic_number": 22,
+      "converged": true,
+      "total_energy_ha": -849.0814161312895,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -177.74133
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -19.510458
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.27129605
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.16255499
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -16.295889
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.42530725
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 2,
+          "energy_ha": -0.162275845
+        }
+      ]
+    },
+    {
+      "symbol": "V",
+      "atomic_number": 23,
+      "converged": true,
+      "total_energy_ha": -943.5821325507644,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -195.713585
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -21.8711595
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.54155785
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.170790535
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -18.4475835
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.61330385
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 3,
+          "energy_ha": -0.19646741
+        }
+      ]
+    },
+    {
+      "symbol": "Cr",
+      "atomic_number": 24,
+      "converged": true,
+      "total_energy_ha": -1044.0306895580893,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -214.39666
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -24.1733805
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.6647761
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 1,
+          "energy_ha": -0.1437993
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -20.541234
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.65749165
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 5,
+          "energy_ha": -0.11005934
+        }
+      ]
+    },
+    {
+      "symbol": "Mn",
+      "atomic_number": 25,
+      "converged": true,
+      "total_energy_ha": -1150.5516080778602,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -234.236255
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -26.928637
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3.093751
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.184815155
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -23.0819705
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.99500735
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 5,
+          "energy_ha": -0.257602085
+        }
+      ]
+    },
+    {
+      "symbol": "Fe",
+      "atomic_number": 26,
+      "converged": true,
+      "total_energy_ha": -1263.2954324851562,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -254.78969
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -29.6297435
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3.3788212
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.19113823
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -25.5688365
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -2.19140735
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 6,
+          "energy_ha": -0.285755635
+        }
+      ]
+    },
+    {
+      "symbol": "Co",
+      "atomic_number": 27,
+      "converged": true,
+      "total_energy_ha": -1382.3943122839453,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -276.205615
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -32.4473985
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3.67099885
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.19716925
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -28.170389
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -2.39245025
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 7,
+          "energy_ha": -0.312731645
+        }
+      ]
+    },
+    {
+      "symbol": "Ni",
+      "atomic_number": 28,
+      "converged": true,
+      "total_energy_ha": -1507.9845201238165,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -298.484535
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -35.382377
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3.9707955
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.20297566
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -30.887374
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -2.5985575
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 8,
+          "energy_ha": -0.33872696
+        }
+      ]
+    },
+    {
+      "symbol": "Cu",
+      "atomic_number": 29,
+      "converged": true,
+      "total_energy_ha": -1640.2902601829544,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -321.427015
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -38.2140965
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -4.0772505
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 1,
+          "energy_ha": -0.163111485
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -33.501399
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -2.61299555
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -0.19159047
+        }
+      ]
+    },
+    {
+      "symbol": "Zn",
+      "atomic_number": 30,
+      "converged": true,
+      "total_energy_ha": -1779.182796770391,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -345.632785
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -41.606476
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -4.5946383
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.214082525
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -36.669729
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -3.0270965
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -0.388315365
+        }
+      ]
+    },
+    {
+      "symbol": "Ga",
+      "atomic_number": 31,
+      "converged": true,
+      "total_energy_ha": -1924.563718712861,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -370.85927
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -45.279336
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -5.266227
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.32008873
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -40.1160955
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -3.591566
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 1,
+          "energy_ha": -0.096148255
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -0.7266924
+        }
+      ]
+    },
+    {
+      "symbol": "Ge",
+      "atomic_number": 32,
+      "converged": true,
+      "total_energy_ha": -2076.6328631134156,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -397.00636
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -49.136215
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -5.9882005
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.41893036
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -43.7438625
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -4.20300635
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 2,
+          "energy_ha": -0.144495695
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -1.10800275
+        }
+      ]
+    },
+    {
+      "symbol": "As",
+      "atomic_number": 33,
+      "converged": true,
+      "total_energy_ha": -2235.4695608051034,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -424.07454
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -53.17628
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -6.7592925
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.5164621
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -47.552409
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -4.8608588
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 3,
+          "energy_ha": -0.192249015
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -1.53338605
+        }
+      ]
+    },
+    {
+      "symbol": "Se",
+      "atomic_number": 34,
+      "converged": true,
+      "total_energy_ha": -2401.1560426955875,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -452.0624
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -57.397175
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -7.5771305
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.6144563
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -51.539535
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -5.563229
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 4,
+          "energy_ha": -0.240624705
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -2.00166305
+        }
+      ]
+    },
+    {
+      "symbol": "Br",
+      "atomic_number": 35,
+      "converged": true,
+      "total_energy_ha": -2573.7764502393975,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -480.968815
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -61.797065
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -8.440025
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.7137132
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -55.703525
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -6.308755
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 5,
+          "energy_ha": -0.290161665
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -2.51178525
+        }
+      ]
+    },
+    {
+      "symbol": "Kr",
+      "atomic_number": 36,
+      "converged": true,
+      "total_energy_ha": -2753.416109049767,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -510.793
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -66.374635
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -9.346835
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.81467245
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -60.043165
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -7.0965285
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.341135935
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -3.06297865
+        }
+      ]
+    },
+    {
+      "symbol": "Rb",
+      "atomic_number": 37,
+      "converged": true,
+      "total_energy_ha": -2939.7203099184676,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -541.7934
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -71.384265
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -10.548777
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.13274695
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 1,
+          "energy_ha": -0.080845835
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -64.81347
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -8.17792
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.58961225
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -3.90639735
+        }
+      ]
+    },
+    {
+      "symbol": "Sr",
+      "atomic_number": 38,
+      "converged": true,
+      "total_energy_ha": -3132.948659262156,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -573.7319
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -76.588445
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -11.808842
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.4551989
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.12784329
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -69.77686
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -9.316088
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.84305235
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -4.80556485
+        }
+      ]
+    },
+    {
+      "symbol": "Y",
+      "atomic_number": 39,
+      "converged": true,
+      "total_energy_ha": -3333.1282531740803,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -606.51825
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -81.888405
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -13.030681
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.69753315
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.146263485
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -74.835295
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -10.414759
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.0232305
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -5.663663
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 1,
+          "energy_ha": -0.10388041
+        }
+      ]
+    },
+    {
+      "symbol": "Zr",
+      "atomic_number": 40,
+      "converged": true,
+      "total_energy_ha": -3540.458464464838,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -640.20235
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -87.33832
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -14.26912
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.9192071
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.15708148
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -80.04253
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -11.5289095
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.18491955
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -6.5360445
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 2,
+          "energy_ha": -0.14562347
+        }
+      ]
+    },
+    {
+      "symbol": "Nb",
+      "atomic_number": 41,
+      "converged": true,
+      "total_energy_ha": -3755.0323213674374,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -674.6952
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -92.8428
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -15.430909
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.0349977
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 1,
+          "energy_ha": -0.13661797
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -85.303675
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -12.565317
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.24660495
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -7.3289105
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 4,
+          "energy_ha": -0.11900538
+        }
+      ]
+    },
+    {
+      "symbol": "Mo",
+      "atomic_number": 42,
+      "converged": true,
+      "total_energy_ha": -3976.965178636379,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -710.1886
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -98.60773
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -16.7185635
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.233109
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 1,
+          "energy_ha": -0.139457
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -90.823525
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -13.7266335
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.3862066
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -8.2459575
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 5,
+          "energy_ha": -0.146663185
+        }
+      ]
+    },
+    {
+      "symbol": "Tc",
+      "atomic_number": 43,
+      "converged": true,
+      "total_energy_ha": -4206.255366282243,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -746.7243
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -104.67591
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -18.17431
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.5517236
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.175988905
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -96.64486
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -15.0551205
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.6413
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -9.3295095
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 5,
+          "energy_ha": -0.26476744
+        }
+      ]
+    },
+    {
+      "symbol": "Ru",
+      "atomic_number": 44,
+      "converged": true,
+      "total_energy_ha": -4443.167482838648,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -783.92325
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -110.645335
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -19.4035065
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.62744085
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 1,
+          "energy_ha": -0.143242025
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -102.367355
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -16.156018
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.6635912
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -10.182798
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 7,
+          "energy_ha": -0.203046355
+        }
+      ]
+    },
+    {
+      "symbol": "Rh",
+      "atomic_number": 45,
+      "converged": true,
+      "total_energy_ha": -4687.605651808866,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -822.1657
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -116.91913
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -20.802266
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.82524595
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 1,
+          "energy_ha": -0.14459138
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -108.392465
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -17.425599
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.80265685
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -11.2039835
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 8,
+          "energy_ha": -0.231835025
+        }
+      ]
+    },
+    {
+      "symbol": "Pd",
+      "atomic_number": 46,
+      "converged": true,
+      "total_energy_ha": -4939.7934474913145,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -861.1867
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -123.218965
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -22.095727
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.88741075
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -114.44289
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -18.588953
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.8095361
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -12.11705
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -0.151059245
+        }
+      ]
+    },
+    {
+      "symbol": "Ag",
+      "atomic_number": 47,
+      "converged": true,
+      "total_energy_ha": -5199.574823924352,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -901.40215
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -129.97816
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -23.71454
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3.22444365
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 1,
+          "energy_ha": -0.146701925
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -120.9506
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -20.0767775
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -2.08335725
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -13.353864
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -0.290665565
+        }
+      ]
+    },
+    {
+      "symbol": "Cd",
+      "atomic_number": 48,
+      "converged": true,
+      "total_energy_ha": -5467.051583014699,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -942.5807
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -136.95621
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -25.4180765
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3.60125945
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.193989785
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -127.675895
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -21.648477
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -2.3950512
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -14.6733835
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -0.46449632
+        }
+      ]
+    },
+    {
+      "symbol": "In",
+      "atomic_number": 49,
+      "converged": true,
+      "total_energy_ha": -5742.089462079506,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -984.77845
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -144.207815
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -27.2611135
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -4.07215545
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.281186525
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -134.673535
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -23.3588495
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -2.7991581
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 1,
+          "energy_ha": -0.095592355
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -16.130377
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -0.72689235
+        }
+      ]
+    },
+    {
+      "symbol": "Sn",
+      "atomic_number": 50,
+      "converged": true,
+      "total_energy_ha": -6024.852452118381,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1027.91885
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -151.6579
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -29.167523
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -4.5588527
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.360521985
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -141.86842
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -25.131816
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -3.21750295
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 2,
+          "energy_ha": -0.13852923
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -17.648983
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -1.00242945
+        }
+      ]
+    },
+    {
+      "symbol": "Sb",
+      "atomic_number": 51,
+      "converged": true,
+      "total_energy_ha": -6315.3940808366715,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1072.00535
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -159.309605
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -31.1403135
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -5.064562
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.437175775
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -149.263755
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -26.9704135
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -3.6536625
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 3,
+          "energy_ha": -0.17998922
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -19.2322645
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -1.2953219
+        }
+      ]
+    },
+    {
+      "symbol": "Te",
+      "atomic_number": 52,
+      "converged": true,
+      "total_energy_ha": -6613.768312531274,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1117.0385
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -167.163215
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -33.179671
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -5.589682
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.512919
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -156.859865
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -28.8748525
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -4.10827145
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 4,
+          "energy_ha": -0.22116539
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -20.880458
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -1.606449
+        }
+      ]
+    },
+    {
+      "symbol": "I",
+      "atomic_number": 53,
+      "converged": true,
+      "total_energy_ha": -6920.029692211632,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1163.01825
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -175.21853
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -35.2853375
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -6.134159
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.58858595
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -164.65659
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -30.8448975
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -4.5814354
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 5,
+          "energy_ha": -0.262615605
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -22.593348
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -1.93600635
+        }
+      ]
+    },
+    {
+      "symbol": "Xe",
+      "atomic_number": 54,
+      "converged": true,
+      "total_energy_ha": -7234.233212253249,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1209.9445
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -183.47528
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -37.456994
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -6.697863
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.6646413
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -172.65369
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -32.88025
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -5.073136
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.304638065
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -24.370656
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -2.2839981
+        }
+      ]
+    },
+    {
+      "symbol": "Cs",
+      "atomic_number": 55,
+      "converged": true,
+      "total_energy_ha": -7556.05718907532,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1258.02075
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -192.135075
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -39.8949875
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -7.478946
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.91125515
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 1,
+          "energy_ha": -0.07418799
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -181.05308
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -35.181342
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -5.7814435
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.5019666
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -26.4129215
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -2.84778075
+        }
+      ]
+    },
+    {
+      "symbol": "Ba",
+      "atomic_number": 56,
+      "converged": true,
+      "total_energy_ha": -7885.731167349687,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1307.0508
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -201.002155
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -42.403768
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -8.282518
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.1540372
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.11518768
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -189.65894
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -37.55263
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -6.5115865
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.6964014
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -28.5246305
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -3.43299845
+        }
+      ]
+    },
+    {
+      "symbol": "La",
+      "atomic_number": 57,
+      "converged": true,
+      "total_energy_ha": -8223.315264997102,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1356.9541
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -209.9919
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -44.899943
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -9.026897
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.32135045
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.12771693
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -198.386905
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -39.9107185
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -7.181948
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.82191735
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -30.622014
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -3.9580283
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 1,
+          "energy_ha": -0.13705359
+        }
+      ]
+    },
+    {
+      "symbol": "Ce",
+      "atomic_number": 58,
+      "converged": false,
+      "total_energy_ha": null,
+      "occupied_eigenvalues_ha": []
+    },
+    {
+      "symbol": "Pr",
+      "atomic_number": 59,
+      "converged": false,
+      "total_energy_ha": null,
+      "occupied_eigenvalues_ha": []
+    },
+    {
+      "symbol": "Nd",
+      "atomic_number": 60,
+      "converged": false,
+      "total_energy_ha": null,
+      "occupied_eigenvalues_ha": []
+    },
+    {
+      "symbol": "Pm",
+      "atomic_number": 61,
+      "converged": false,
+      "total_energy_ha": null,
+      "occupied_eigenvalues_ha": []
+    },
+    {
+      "symbol": "Sm",
+      "atomic_number": 62,
+      "converged": false,
+      "total_energy_ha": null,
+      "occupied_eigenvalues_ha": []
+    },
+    {
+      "symbol": "Eu",
+      "atomic_number": 63,
+      "converged": false,
+      "total_energy_ha": null,
+      "occupied_eigenvalues_ha": []
+    },
+    {
+      "symbol": "Gd",
+      "atomic_number": 64,
+      "converged": true,
+      "total_energy_ha": -10823.19860030318,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1730.1354
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -275.55485
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -60.81587
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -12.021669
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.60505075
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.13899257
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -262.161435
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -54.85705
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -9.6906015
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.9749349
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -43.755745
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -5.5360705
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 1,
+          "energy_ha": -0.1212646
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 7,
+          "energy_ha": -0.4802905
+        }
+      ]
+    },
+    {
+      "symbol": "Tb",
+      "atomic_number": 65,
+      "converged": false,
+      "total_energy_ha": null,
+      "occupied_eigenvalues_ha": []
+    },
+    {
+      "symbol": "Dy",
+      "atomic_number": 66,
+      "converged": true,
+      "total_energy_ha": -11644.643671434535,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1844.79035
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -295.54266
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -65.35288
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -12.587511
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.54403525
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.12839281
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -281.642835
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -59.113035
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -10.1154705
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.89882845
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -47.488606
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -5.690941
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 10,
+          "energy_ha": -0.2568029
+        }
+      ]
+    },
+    {
+      "symbol": "Ho",
+      "atomic_number": 67,
+      "converged": true,
+      "total_energy_ha": -12068.660702319132,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1903.6377
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -305.94282
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -67.83952
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -13.0223125
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.57790075
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.129430235
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -291.78724
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -61.45753
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -10.4769805
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.91448075
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -49.5679405
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -5.910859
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 11,
+          "energy_ha": -0.26404925
+        }
+      ]
+    },
+    {
+      "symbol": "Er",
+      "atomic_number": 68,
+      "converged": true,
+      "total_energy_ha": -12501.724871443213,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1963.41
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -316.517825
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -70.36473
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -13.460862
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.6116341
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.13045305
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -302.106405
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -63.839965
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -10.8415045
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.9299009
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -51.684065
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -6.132155
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 12,
+          "energy_ha": -0.26981385
+        }
+      ]
+    },
+    {
+      "symbol": "Tm",
+      "atomic_number": 69,
+      "converged": true,
+      "total_energy_ha": -12943.90977091081,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2024.1074
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -327.26792
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -72.92888
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -13.90343
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.6452945
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.13146308
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -312.60059
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -66.26069
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -11.209295
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.9451319
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -53.837315
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -6.355041
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 13,
+          "energy_ha": -0.2742162
+        }
+      ]
+    },
+    {
+      "symbol": "Yb",
+      "atomic_number": 70,
+      "converged": true,
+      "total_energy_ha": -13395.288894984456,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2085.73015
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -338.193335
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -75.53228
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -14.350246
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.6789313
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.13246188
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -323.27
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -68.720015
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -11.580565
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.96020975
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -56.027985
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -6.579696
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -0.27735929
+        }
+      ]
+    },
+    {
+      "symbol": "Lu",
+      "atomic_number": 71,
+      "converged": false,
+      "total_energy_ha": null,
+      "occupied_eigenvalues_ha": []
+    },
+    {
+      "symbol": "Hf",
+      "atomic_number": 72,
+      "converged": true,
+      "total_energy_ha": -14324.972089178404,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2212.3629
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -361.22824
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -81.579375
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -15.9240355
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.04511565
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.161311135
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -345.78268
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -74.47408
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -12.9951715
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.24083005
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -61.233115
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -7.682377
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 2,
+          "energy_ha": -0.136677115
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -0.86269205
+        }
+      ]
+    },
+    {
+      "symbol": "Ta",
+      "atomic_number": 73,
+      "converged": true,
+      "total_energy_ha": -14803.48256290171,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2277.10635
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -373.05308
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -84.71441
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -16.7538375
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.21835645
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.16888341
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -357.34487
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -77.46132
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -13.7435505
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.37037555
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -63.94315
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -8.271028
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 3,
+          "energy_ha": -0.175210405
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -1.18945905
+        }
+      ]
+    },
+    {
+      "symbol": "W",
+      "atomic_number": 74,
+      "converged": true,
+      "total_energy_ha": -15291.168279219677,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2342.8019
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -385.08316
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -87.92309
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -17.6113465
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.38997145
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.17468592
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -369.11138
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -80.52142
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -14.51858
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.49789175
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -66.72437
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -8.8842775
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 4,
+          "energy_ha": -0.213334565
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -1.53991675
+        }
+      ]
+    },
+    {
+      "symbol": "Re",
+      "atomic_number": 75,
+      "converged": true,
+      "total_energy_ha": -15788.077733097987,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2409.4487
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -397.317435
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -91.203905
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -18.494931
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.56089415
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.179360295
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -381.08121
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -83.652885
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -15.318721
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.6244052
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -69.575365
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -9.520827
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 5,
+          "energy_ha": -0.251429155
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -1.913176
+        }
+      ]
+    },
+    {
+      "symbol": "Os",
+      "atomic_number": 76,
+      "converged": true,
+      "total_energy_ha": -16294.26052040523,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2477.04585
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -409.75494
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -94.555515
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -19.4031945
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.73161235
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.183262175
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -393.253435
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -86.854415
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -16.1426555
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.7504626
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -72.494895
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -10.179551
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 6,
+          "energy_ha": -0.28968661
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -2.3083407
+        }
+      ]
+    },
+    {
+      "symbol": "Ir",
+      "atomic_number": 77,
+      "converged": true,
+      "total_energy_ha": -16809.76710861495,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2545.5928
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -422.394875
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -97.97682
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -20.335006
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.90242585
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.18660892
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -405.62727
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -90.12492
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -16.9893185
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.87639975
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -75.48193
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -10.85954
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 7,
+          "energy_ha": -0.328217365
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -2.72462625
+        }
+      ]
+    },
+    {
+      "symbol": "Pt",
+      "atomic_number": 78,
+      "converged": true,
+      "total_energy_ha": -17334.794242794975,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2614.9503
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -435.094475
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -101.32609
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -21.149337
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2.94169805
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 1,
+          "energy_ha": -0.15083039
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -418.060115
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -93.322655
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -17.7177135
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.87556245
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -78.39436
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -11.419826
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 9,
+          "energy_ha": -0.265433255
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -3.0213304
+        }
+      ]
+    },
+    {
+      "symbol": "Au",
+      "atomic_number": 79,
+      "converged": true,
+      "total_energy_ha": -17869.13607741831,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2685.38615
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -448.12838
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -104.875265
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -22.11689
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3.1051403
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 1,
+          "energy_ha": -0.1514257
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -430.82636
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -96.719645
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -18.5986455
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -1.9937899
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -81.50504
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -12.131524
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -0.296515145
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -3.4691747
+        }
+      ]
+    },
+    {
+      "symbol": "Hg",
+      "atomic_number": 80,
+      "converged": true,
+      "total_energy_ha": -18412.743896801876,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2756.92685
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -461.52323
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -108.6506
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -23.263561
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3.41726575
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.194528575
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -443.952685
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -100.342175
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -19.65804
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -2.25548005
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -84.84033
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -13.0206205
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -0.44602919
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -4.0941463
+        }
+      ]
+    },
+    {
+      "symbol": "Tl",
+      "atomic_number": 81,
+      "converged": true,
+      "total_energy_ha": -18965.554550697576,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2829.5005
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -475.203665
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -112.57732
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -24.5147325
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3.80860315
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.27529623
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -457.36386
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -104.115475
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -20.8212795
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -2.59517485
+        },
+        {
+          "n": 6,
+          "l": 1,
+          "occupancy": 1,
+          "energy_ha": -0.094798375
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -88.325235
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -14.012452
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -0.67033175
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -4.8216439
+        }
+      ]
+    },
+    {
+      "symbol": "Pb",
+      "atomic_number": 82,
+      "converged": true,
+      "total_energy_ha": -19527.716184730645,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2903.03485
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -489.098155
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -116.58331
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -25.7979155
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -4.2059873
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.347916135
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -470.98838
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -107.967455
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -22.0159135
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -2.9397563
+        },
+        {
+          "n": 6,
+          "l": 1,
+          "occupancy": 2,
+          "energy_ha": -0.13542763
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -91.887795
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -15.034661
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -0.899137
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -5.5793195
+        }
+      ]
+    },
+    {
+      "symbol": "Bi",
+      "atomic_number": 83,
+      "converged": true,
+      "total_energy_ha": -20099.26359129708,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -2977.53305
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -503.20965
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -120.67137
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -27.115828
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -4.6127329
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.417202645
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -484.829245
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -111.900945
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -23.244691
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -3.29286155
+        },
+        {
+          "n": 6,
+          "l": 1,
+          "occupancy": 3,
+          "energy_ha": -0.17414853
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -95.53088
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -16.0900585
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -1.13658035
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -6.370017
+        }
+      ]
+    },
+    {
+      "symbol": "Po",
+      "atomic_number": 84,
+      "converged": true,
+      "total_energy_ha": -20680.23208893493,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3052.99545
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -517.53855
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -124.84167
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -28.468574
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -5.0294665
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.484873725
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -498.886785
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -115.916125
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -24.5077445
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -3.6553217
+        },
+        {
+          "n": 6,
+          "l": 1,
+          "occupancy": 4,
+          "energy_ha": -0.212112965
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -99.2547
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -17.178834
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -1.3836657
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -7.193949
+        }
+      ]
+    },
+    {
+      "symbol": "At",
+      "atomic_number": 85,
+      "converged": true,
+      "total_energy_ha": -21270.657672756282,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3129.42205
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -532.08455
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -129.09392
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -29.8558155
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -5.456309
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.5517621
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -513.16085
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -120.012715
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -25.804762
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -4.02739495
+        },
+        {
+          "n": 6,
+          "l": 1,
+          "occupancy": 5,
+          "energy_ha": -0.24987932
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -103.059
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -18.300727
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -1.64069875
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -8.050873
+        }
+      ]
+    },
+    {
+      "symbol": "Rn",
+      "atomic_number": 86,
+      "converged": true,
+      "total_energy_ha": -21870.576883970538,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3206.81255
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -546.8475
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -133.427735
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -31.2771475
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -5.8932585
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.6183414
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -527.6512
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -124.19035
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -27.1353625
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -4.40917355
+        },
+        {
+          "n": 6,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.287752765
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -106.943445
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -19.4554035
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -1.90776725
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -8.940465
+        }
+      ]
+    },
+    {
+      "symbol": "Fr",
+      "atomic_number": 87,
+      "converged": true,
+      "total_energy_ha": -22479.67906337631,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3285.34625
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -562.00545
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -138.020565
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -32.9094815
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -6.515846
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.8360733
+        },
+        {
+          "n": 7,
+          "l": 0,
+          "occupancy": 1,
+          "energy_ha": -0.071582995
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -542.53605
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -128.62653
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -28.676478
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -4.9760622
+        },
+        {
+          "n": 6,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.46277377
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -111.0856
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -20.819822
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -2.35932545
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -10.0396655
+        }
+      ]
+    },
+    {
+      "symbol": "Ra",
+      "atomic_number": 88,
+      "converged": true,
+      "total_energy_ha": -23098.174709090094,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3364.84505
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -577.38075
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -142.69483
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -34.5752995
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -7.147297
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.04661925
+        },
+        {
+          "n": 7,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.109961625
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -557.6378
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -133.143675
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -30.2506125
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -5.551394
+        },
+        {
+          "n": 6,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.63175925
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -115.307905
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -22.2165385
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -2.8192044
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -11.1710615
+        }
+      ]
+    },
+    {
+      "symbol": "Ac",
+      "atomic_number": 89,
+      "converged": true,
+      "total_energy_ha": -23726.111264888055,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3445.24305
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -592.9055
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -147.383045
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -36.207554
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -7.7216125
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.19144455
+        },
+        {
+          "n": 7,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.122079215
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -572.88855
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -137.674295
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -31.790737
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -6.0692305
+        },
+        {
+          "n": 6,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.74110275
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -119.542685
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -23.5785275
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -3.2214452
+        },
+        {
+          "n": 6,
+          "l": 2,
+          "occupancy": 1,
+          "energy_ha": -0.133972685
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -12.267659
+        }
+      ]
+    },
+    {
+      "symbol": "Th",
+      "atomic_number": 90,
+      "converged": true,
+      "total_energy_ha": -24363.575483609246,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3526.5957
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -608.6364
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -152.141785
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -37.862757
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -8.295713
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.3273391
+        },
+        {
+          "n": 7,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.130575735
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -588.34495
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -142.27497
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -33.3533855
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -6.5865985
+        },
+        {
+          "n": 6,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.84295115
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -123.84664
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -24.9623805
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -3.62347345
+        },
+        {
+          "n": 6,
+          "l": 2,
+          "occupancy": 2,
+          "energy_ha": -0.169321635
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -13.386044
+        }
+      ]
+    },
+    {
+      "symbol": "Pa",
+      "atomic_number": 91,
+      "converged": true,
+      "total_energy_ha": -25011.158172270476,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3608.51645
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -624.1608
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -156.53108
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -39.11434
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -8.4736095
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.28206345
+        },
+        {
+          "n": 7,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.124964785
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -603.6003
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -146.50654
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -34.512059
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -6.715199
+        },
+        {
+          "n": 6,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.79615055
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -127.78284
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -25.9413185
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -3.6597525
+        },
+        {
+          "n": 6,
+          "l": 2,
+          "occupancy": 1,
+          "energy_ha": -0.1379544
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -14.095493
+        },
+        {
+          "n": 5,
+          "l": 3,
+          "occupancy": 2,
+          "energy_ha": -0.31123885
+        }
+      ]
+    },
+    {
+      "symbol": "U",
+      "atomic_number": 92,
+      "converged": true,
+      "total_energy_ha": -25668.411670981994,
+      "occupied_eigenvalues_ha": [
+        {
+          "n": 1,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -3691.56285
+        },
+        {
+          "n": 2,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -640.07275
+        },
+        {
+          "n": 3,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -161.1833
+        },
+        {
+          "n": 4,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -40.5778635
+        },
+        {
+          "n": 5,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -8.834919
+        },
+        {
+          "n": 6,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -1.32081605
+        },
+        {
+          "n": 7,
+          "l": 0,
+          "occupancy": 2,
+          "energy_ha": -0.126213075
+        },
+        {
+          "n": 2,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -619.24045
+        },
+        {
+          "n": 3,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -151.000185
+        },
+        {
+          "n": 4,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -35.882257
+        },
+        {
+          "n": 5,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -7.0239925
+        },
+        {
+          "n": 6,
+          "l": 1,
+          "occupancy": 6,
+          "energy_ha": -0.8186985
+        },
+        {
+          "n": 3,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -131.97922
+        },
+        {
+          "n": 4,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -27.1312675
+        },
+        {
+          "n": 5,
+          "l": 2,
+          "occupancy": 10,
+          "energy_ha": -3.8664604
+        },
+        {
+          "n": 6,
+          "l": 2,
+          "occupancy": 1,
+          "energy_ha": -0.1382781
+        },
+        {
+          "n": 4,
+          "l": 3,
+          "occupancy": 14,
+          "energy_ha": -15.0171425
+        },
+        {
+          "n": 5,
+          "l": 3,
+          "occupancy": 3,
+          "energy_ha": -0.36127352
+        }
+      ]
+    }
+  ]
+}
