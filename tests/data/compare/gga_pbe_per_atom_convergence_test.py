@@ -29,7 +29,7 @@ from summary_naming import glob_sweep_summaries, mesh_tag_from_summary_path
 
 _COMPARE_DIR = Path(__file__).resolve().parent
 _SUMMARY_DIR = _DATA_DIR / "summary"
-_DEFAULT_GGA_PBE_ROOT = _SUMMARY_DIR / "all_electron" / "rscan"
+_DEFAULT_GGA_PBE_ROOT = _SUMMARY_DIR / "all_electron" / "hf"
 _DEFAULT_OUT = _COMPARE_DIR / "gga_pbe_per_atom_convergence_test.pdf"
 
 plt.rcParams.update(

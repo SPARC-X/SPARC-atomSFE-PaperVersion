@@ -369,11 +369,11 @@ class RPACorrelation:
 
         # orbital outer product: φ_p(r) ⊗ φ_q(r) for all (p,q) pairs
         #   shape: (occ_num, unocc_num, n_grid)
-        orbital_product_outer_ov = np.einsum('li,lj->ijl',
-            occ_orbitals,
-            unocc_orbitals,
-            optimize = True,
-        )
+        # orbital_product_outer_ov = np.einsum('li,lj->ijl',
+        #     occ_orbitals,
+        #     unocc_orbitals,
+        #     optimize = True,
+        # )
         #   shape: (occ_num, occ_num, n_grid)
         orbital_product_outer_oo = np.einsum('li,lj->ijl',
             occ_orbitals,
@@ -381,7 +381,12 @@ class RPACorrelation:
             optimize = True,
         )
         #   shape: (occ_num, total_num, n_grid)
-        orbital_product_outer_all = np.concatenate([orbital_product_outer_oo, orbital_product_outer_ov], axis=1)
+        # orbital_product_outer_all = np.concatenate([orbital_product_outer_oo, orbital_product_outer_ov], axis=1)
+        orbital_product_outer_all = np.einsum('li,lj->ijl',
+            occ_orbitals,
+            full_orbitals,
+            optimize = True,
+        )
 
         # Orbital squared difference: φ_p²(r) - φ_q²(r) for valid (p,q) pairs
         #   shape: (n_grid, n_valid_pairs_ov)
@@ -515,7 +520,8 @@ class RPACorrelation:
                         'ji,kj,jil,lk->ik',
                         _prefactor_ov[:,_nonzero_unocc_indices],                # (occ_num, unocc_nonzero_num)
                         occ_orbitals,                                           # (n_quad, occ_num)
-                        orbital_product_outer_ov[:, _nonzero_unocc_indices, :], # (unocc_nonzero_num, n_quad)
+                        # orbital_product_outer_ov[:, _nonzero_unocc_indices, :], # (unocc_nonzero_num, n_quad)
+                        orbital_product_outer_all[:, len(occ_l_values):, :][:, _nonzero_unocc_indices, :], # (unocc_nonzero_num, n_quad)
                         dyson_solved_response,                                  # (n_quad, n_quad)
                         optimize=True,
                     )

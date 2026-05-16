@@ -22,7 +22,9 @@ if str(_DATA_DIR) not in sys.path:
     sys.path.insert(0, str(_DATA_DIR))
 from summary_naming import default_all_electron_summary
 
-_DEFAULT_REFERENCE = _DATA_DIR / "reference" / "gga_pbe" / "oncvpsp_atoms_gga_pbe.json"
+_DEFAULT_REFERENCE = (
+    _DATA_DIR / "reference" / "all_electron" / "gga_pbe" / "oncvpsp_atoms_gga_pbe.json"
+)
 _DEFAULT_SUMMARY = default_all_electron_summary(_DATA_DIR, "gga_pbe")
 _DEFAULT_OUT_TXT = Path(__file__).resolve().parent / "gga_pbe_accuracy_test_oncvpsp_summary.txt"
 

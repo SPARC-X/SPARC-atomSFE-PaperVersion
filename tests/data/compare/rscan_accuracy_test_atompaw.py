@@ -26,7 +26,7 @@ if str(_DATA_DIR) not in sys.path:
     sys.path.insert(0, str(_DATA_DIR))
 from summary_naming import default_all_electron_summary
 
-_DEFAULT_REFERENCE = _DATA_DIR / "reference" / "rscan" / "atompaw_atoms_rscan_dense.json"
+_DEFAULT_REFERENCE = _DATA_DIR / "reference" / "all_electron" / "rscan" / "atompaw_atoms_rscan_dense.json"
 _DEFAULT_SUMMARY = default_all_electron_summary(_DATA_DIR, "rscan")
 _DEFAULT_OUT_TXT = Path(__file__).resolve().parent / "rscan_accuracy_test_atompaw_summary.txt"
 

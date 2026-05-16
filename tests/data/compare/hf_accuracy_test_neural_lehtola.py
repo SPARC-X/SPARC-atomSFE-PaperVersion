@@ -36,7 +36,7 @@ if str(_DATA_DIR) not in sys.path:
     sys.path.insert(0, str(_DATA_DIR))
 from summary_naming import resolve_summary_under
 
-_DEFAULT_REFERENCE = _DATA_DIR / "reference" / "hf" / "lehtola_closed_subshell_atoms_hf.json"
+_DEFAULT_REFERENCE = _DATA_DIR / "reference" / "all_electron" / "hf" / "lehtola_closed_subshell_atoms_hf.json"
 _DEFAULT_SUMMARY_HF = _DATA_DIR / "summary" / "all_electron" / "hf"
 _DEFAULT_CASE = ""
 

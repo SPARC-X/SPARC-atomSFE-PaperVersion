@@ -1,0 +1,675 @@
+{
+  "dataset_dir": "/pscratch/sd/q/qihao/atomSFE_with_boundary/data_functional_sweeps_ae_fe_boundary/hf/domain_radius_sweep/subset_006_fe10_R006",
+  "input_parameters": {
+    "all_electron_flag": true,
+    "xc_functional": "HF",
+    "use_oep": false,
+    "domain_size": 6.06740346522635,
+    "finite_element_number": 10,
+    "polynomial_order": 20,
+    "quadrature_point_number": 60,
+    "oep_basis_number": null,
+    "mesh_type": "exponential",
+    "mesh_concentration": 101.0,
+    "mesh_spacing": 0.1,
+    "scf_tolerance": 1e-10,
+    "max_scf_iterations": 200,
+    "max_scf_iterations_outer": 50,
+    "use_pulay_mixing": true,
+    "use_preconditioner": false,
+    "pulay_mixing_parameter": 0.45,
+    "pulay_mixing_history": 11,
+    "pulay_mixing_frequency": 1,
+    "linear_mixing_alpha1": 0.75,
+    "linear_mixing_alpha2": 0.95,
+    "psp_dir_path": null,
+    "psp_file_name": null,
+    "hybrid_mixing_parameter": 1.0,
+    "frequency_quadrature_point_number": null,
+    "angular_momentum_cutoff": null,
+    "oep_mixing_parameter": null,
+    "enable_parallelization": null
+  },
+  "n_configurations": 17,
+  "n_summarized": 17,
+  "config_summaries": [
+    {
+      "configuration": "configuration_001",
+      "atomic_number": 2,
+      "n_electrons": 2.0,
+      "converged": true,
+      "energies_ha": {
+        "kinetic_radial": 2.86198379821,
+        "kinetic_angular": 0.0,
+        "total_kinetic": 2.86198379821,
+        "external_potential": -6.74951776284,
+        "hartree": 2.05175171867,
+        "exchange": 0.0,
+        "correlation": 0.0,
+        "hf_exchange": -1.02587585933,
+        "total_potential": -5.7236419035,
+        "total_energy": -2.8616581053
+      },
+      "total_energy_ha": -2.8616581052958328,
+      "occupied_state_count": 1,
+      "occupied_eigenvalues_ha": [
+        -0.9178911229504325
+      ],
+      "lowest_5_unoccupied_eigs_ha": [
+        0.22302093069568546,
+        0.8176293084169218,
+        1.711175655092627,
+        2.8819795908620396,
+        4.324620872213491
+      ]
+    },
+    {
+      "configuration": "configuration_002",
+      "atomic_number": 4,
+      "n_electrons": 4.0,
+      "converged": true,
+      "energies_ha": {
+        "kinetic_radial": 14.68464679631,
+        "kinetic_angular": 0.0,
+        "total_kinetic": 14.68464679631,
+        "external_potential": -33.83242302108,
+        "hartree": 7.28595189122,
+        "exchange": 0.0,
+        "correlation": 0.0,
+        "hf_exchange": -2.69287143353,
+        "total_potential": -29.23934256338,
+        "total_energy": -14.55469576707
+      },
+      "total_energy_ha": -14.554695767070005,
+      "occupied_state_count": 2,
+      "occupied_eigenvalues_ha": [
+        -4.691717835257767,
+        -0.28908981930131555
+      ],
+      "lowest_5_unoccupied_eigs_ha": [
+        0.44801019393911257,
+        1.2466211821418731,
+        2.338786278844018,
+        3.7202381287869777,
+        5.3853467449664585
+      ]
+    },
+    {
+      "configuration": "configuration_003",
+      "atomic_number": 10,
+      "n_electrons": 10.0,
+      "converged": true,
+      "energies_ha": {
+        "kinetic_radial": 110.19420629839,
+        "kinetic_angular": 18.35386141781,
+        "total_kinetic": 128.5480677162,
+        "external_potential": -311.13625884799,
+        "hartree": 66.1498741932,
+        "exchange": 0.0,
+        "correlation": 0.0,
+        "hf_exchange": -12.10870921766,
+        "total_potential": -257.09509387246,
+        "total_energy": -128.54702615626
+      },
+      "total_energy_ha": -128.54702615625592,
+      "occupied_state_count": 3,
+      "occupied_eigenvalues_ha": [
+        -32.77212438296014,
+        -1.9301725657877458,
+        -0.8502112108067
+      ],
+      "lowest_5_unoccupied_eigs_ha": [
+        0.19821422672799568,
+        0.7824833582112127,
+        1.7114811227259183,
+        2.9524885581994504,
+        4.490090780045038
+      ]
+    },
+    {
+      "configuration": "configuration_004",
+      "atomic_number": 12,
+      "n_electrons": 12.0,
+      "converged": true,
+      "energies_ha": {
+        "kinetic_radial": 167.05812895662,
+        "kinetic_angular": 32.77771333167,
+        "total_kinetic": 199.83584228829,
+        "external_potential": -479.90359534439,
+        "hartree": 96.5330504806,
+        "exchange": 0.0,
+        "correlation": 0.0,
+        "hf_exchange": -16.03725273484,
+        "total_potential": -399.40779759864,
+        "total_energy": -199.57195531035
+      },
+      "total_energy_ha": -199.5719553103484,
+      "occupied_state_count": 4,
+      "occupied_eigenvalues_ha": [
+        -48.9647062340925,
+        -3.705274928958048,
+        -2.217938125024463,
+        -0.21428324261157383
+      ],
+      "lowest_5_unoccupied_eigs_ha": [
+        0.5472799543065564,
+        1.4259849836714167,
+        2.6149557603209717,
+        4.10697277109969,
+        5.894007687955352
+      ]
+    },
+    {
+      "configuration": "configuration_005",
+      "atomic_number": 18,
+      "n_electrons": 18.0,
+      "converged": true,
+      "energies_ha": {
+        "kinetic_radial": 418.83294927681,
+        "kinetic_angular": 108.00647372308,
+        "total_kinetic": 526.83942299989,
+        "external_potential": -1255.14809464549,
+        "hartree": 231.68420046144,
+        "exchange": 0.0,
+        "correlation": 0.0,
+        "hf_exchange": -30.19097109078,
+        "total_potential": -1053.65486527484,
+        "total_energy": -526.81544227495
+      },
+      "total_energy_ha": -526.8154422749459,
+      "occupied_state_count": 5,
+      "occupied_eigenvalues_ha": [
+        -118.60529201796513,
+        -12.317386216310984,
+        -9.566711470517584,
+        -1.2741535239212587,
+        -0.588046747846268
+      ],
+      "lowest_5_unoccupied_eigs_ha": [
+        0.2447374074377108,
+        0.942547742725927,
+        1.9986398614487046,
+        3.372340067721682,
+        5.050078355470775
+      ]
+    },
+    {
+      "configuration": "configuration_006",
+      "atomic_number": 20,
+      "n_electrons": 20.0,
+      "converged": true,
+      "energies_ha": {
+        "kinetic_radial": 533.63708218615,
+        "kinetic_angular": 143.60404864241,
+        "total_kinetic": 677.24113082856,
+        "external_potential": -1605.49233357986,
+        "hartree": 286.8904147974,
+        "exchange": 0.0,
+        "correlation": 0.0,
+        "hf_exchange": -35.28541612984,
+        "total_potential": -1353.8873349123,
+        "total_energy": -676.64620408375
+      },
+      "total_energy_ha": -676.6462040837457,
+      "occupied_state_count": 6,
+      "occupied_eigenvalues_ha": [
+        -149.25434696333988,
+        -16.71674913752114,
+        -13.521495584664562,
+        -2.1480023944949815,
+        -1.2413077555137042,
+        -0.11309418625848389
+      ],
+      "lowest_5_unoccupied_eigs_ha": [
+        0.7315176828232242,
+        1.7422598596445749,
+        3.073700094867636,
+        4.714473735435093,
+        6.655883704443633
+      ]
+    },
+    {
+      "configuration": "configuration_007",
+      "atomic_number": 30,
+      "n_electrons": 30.0,
+      "converged": true,
+      "energies_ha": {
+        "kinetic_radial": 1298.76832974661,
+        "kinetic_angular": 479.22778104362,
+        "total_kinetic": 1777.99611079023,
+        "external_potential": -4263.1259136049,
+        "hartree": 776.97224815271,
+        "exchange": 0.0,
+        "correlation": 0.0,
+        "hf_exchange": -69.66530230677,
+        "total_potential": -3555.81896775897,
+        "total_energy": -1777.82285696874
+      },
+      "total_energy_ha": -1777.8228569687394,
+      "occupied_state_count": 7,
+      "occupied_eigenvalues_ha": [
+        -353.26680456468745,
+        -44.32566442159618,
+        -38.88828395227923,
+        -5.601381217132651,
+        -3.8019234819175374,
+        -0.7450332193415471,
+        -0.2683168945430536
+      ],
+      "lowest_5_unoccupied_eigs_ha": [
+        0.49721666788624924,
+        1.3691673064594614,
+        2.566237149059459,
+        4.080189506686318,
+        5.901917180480941
+      ]
+    },
+    {
+      "configuration": "configuration_008",
+      "atomic_number": 36,
+      "n_electrons": 36.0,
+      "converged": true,
+      "energies_ha": {
+        "kinetic_radial": 1955.58831194003,
+        "kinetic_angular": 796.51936696239,
+        "total_kinetic": 2752.10767890242,
+        "external_potential": -6582.94168575771,
+        "hartree": 1172.65346086989,
+        "exchange": 0.0,
+        "correlation": 0.0,
+        "hf_exchange": -93.86901787062,
+        "total_potential": -5504.15724275844,
+        "total_energy": -2752.04956385602
+      },
+      "total_energy_ha": -2752.0495638560246,
+      "occupied_state_count": 8,
+      "occupied_eigenvalues_ha": [
+        -520.1553516983847,
+        -69.89322299325495,
+        -62.999919385348214,
+        -10.839862969323015,
+        -8.321964155925063,
+        -3.8156445938543175,
+        -1.1463477381517986,
+        -0.517967125562684
+      ],
+      "lowest_5_unoccupied_eigs_ha": [
+        0.2652450924447984,
+        1.0113622413205416,
+        2.122297739858739,
+        3.55795920337278,
+        5.3055747882016915
+      ]
+    },
+    {
+      "configuration": "configuration_009",
+      "atomic_number": 38,
+      "n_electrons": 38.0,
+      "converged": true,
+      "energies_ha": {
+        "kinetic_radial": 2211.83501108136,
+        "kinetic_angular": 920.34855032074,
+        "total_kinetic": 3132.1835614021,
+        "external_potential": -7474.47579825835,
+        "hartree": 1312.93953473935,
+        "exchange": 0.0,
+        "correlation": 0.0,
+        "hf_exchange": -102.03773512277,
+        "total_potential": -6263.57399864178,
+        "total_energy": -3131.39043723968
+      },
+      "total_energy_ha": -3131.390437239676,
+      "occupied_state_count": 9,
+      "occupied_eigenvalues_ha": [
+        -583.5649919151466,
+        -80.26965311303016,
+        -72.87394136820689,
+        -13.35614094076246,
+        -10.57952968234526,
+        -5.573865200823281,
+        -1.7879300396994475,
+        -0.988035730235438,
+        -0.07175641199940616
+      ],
+      "lowest_5_unoccupied_eigs_ha": [
+        0.8247113950286362,
+        1.9025338982255813,
+        3.3071100158586493,
+        5.027136447241808,
+        7.0540692106243155
+      ]
+    },
+    {
+      "configuration": "configuration_010",
+      "atomic_number": 46,
+      "n_electrons": 46.0,
+      "converged": true,
+      "energies_ha": {
+        "kinetic_radial": 3393.1256533121,
+        "kinetic_angular": 1544.8504240491,
+        "total_kinetic": 4937.9760773612,
+        "external_potential": -11771.89099781974,
+        "hartree": 2035.16793052884,
+        "exchange": 0.0,
+        "correlation": 0.0,
+        "hf_exchange": -139.16700720161,
+        "total_potential": -9875.89007449251,
+        "total_energy": -4937.91399713131
+      },
+      "total_energy_ha": -4937.913997131312,
+      "occupied_state_count": 9,
+      "occupied_eigenvalues_ha": [
+        -873.3007170416989,
+        -127.95111236839134,
+        -118.5156656782057,
+        -24.19379508458972,
+        -20.35897560764016,
+        -13.348185045330581,
+        -3.5731659629768613,
+        -2.3165689127899824,
+        -0.3246380743355409
+      ],
+      "lowest_5_unoccupied_eigs_ha": [
+        0.12356784831703584,
+        0.683081875473228,
+        1.6385755804838145,
+        2.9424186592188963,
+        4.572263551685072
+      ]
+    },
+    {
+      "configuration": "configuration_011",
+      "atomic_number": 48,
+      "n_electrons": 48.0,
+      "converged": true,
+      "energies_ha": {
+        "kinetic_radial": 3736.67996387436,
+        "kinetic_angular": 1728.67154088101,
+        "total_kinetic": 5465.35150475537,
+        "external_potential": -13017.69585393154,
+        "hartree": 2236.19994716178,
+        "exchange": 0.0,
+        "correlation": 0.0,
+        "hf_exchange": -148.94886455702,
+        "total_potential": -10930.44477132677,
+        "total_energy": -5465.09326657141
+      },
+      "total_energy_ha": -5465.093266571406,
+      "occupied_state_count": 10,
+      "occupied_eigenvalues_ha": [
+        -955.2684059875759,
+        -141.96102846554075,
+        -132.00086781557434,
+        -27.663011130307382,
+        -23.55116596513487,
+        -16.02570342913259,
+        -4.405145351544908,
+        -3.006732471962519,
+        -0.7175389894493271,
+        -0.23099012064336308
+      ],
+      "lowest_5_unoccupied_eigs_ha": [
+        0.5652673458993879,
+        1.507427016637226,
+        2.788503739118587,
+        4.395553580095241,
+        6.317239900949693
+      ]
+    },
+    {
+      "configuration": "configuration_012",
+      "atomic_number": 54,
+      "n_electrons": 54.0,
+      "converged": true,
+      "energies_ha": {
+        "kinetic_radial": 4883.11242481107,
+        "kinetic_angular": 2349.16865401151,
+        "total_kinetic": 7232.28107882259,
+        "external_potential": -17166.40634692182,
+        "hartree": 2881.13010761637,
+        "exchange": 0.0,
+        "correlation": 0.0,
+        "hf_exchange": -179.12711143638,
+        "total_potential": -14464.40335074184,
+        "total_energy": -7232.12227191925
+      },
+      "total_energy_ha": -7232.12227191925,
+      "occupied_state_count": 11,
+      "occupied_eigenvalues_ha": [
+        -1224.375489966186,
+        -189.31823639619347,
+        -177.76053811761375,
+        -40.15406743189151,
+        -35.20011049249333,
+        -26.097216017497843,
+        -7.835326171063682,
+        -5.987499534239079,
+        -2.757095054614665,
+        -0.9304708326323328,
+        -0.4433490479923409
+      ],
+      "lowest_5_unoccupied_eigs_ha": [
+        0.31896809962740325,
+        1.1522067166298064,
+        2.353304511977489,
+        3.886637973350823,
+        5.739634809527069
+      ]
+    },
+    {
+      "configuration": "configuration_013",
+      "atomic_number": 56,
+      "n_electrons": 56.0,
+      "converged": true,
+      "energies_ha": {
+        "kinetic_radial": 5307.03902663541,
+        "kinetic_angular": 2577.44637918571,
+        "total_kinetic": 7884.48540582113,
+        "external_potential": -18682.20072954326,
+        "hartree": 3103.62423511845,
+        "exchange": 0.0,
+        "correlation": 0.0,
+        "hf_exchange": -189.21295445212,
+        "total_potential": -15767.78944887693,
+        "total_energy": -7883.3040430558
+      },
+      "total_energy_ha": -7883.304043055803,
+      "occupied_state_count": 12,
+      "occupied_eigenvalues_ha": [
+        -1321.9465469448462,
+        -207.0090700727737,
+        -194.90981130924044,
+        -45.136775998326,
+        -39.894641255365386,
+        -30.256909989312945,
+        -9.415723778579093,
+        -7.406839591072118,
+        -3.859555091120326,
+        -1.3865955336469393,
+        -0.776745927894797,
+        -0.005229045347256748
+      ],
+      "lowest_5_unoccupied_eigs_ha": [
+        0.9758336289818775,
+        2.1500173775684255,
+        3.65670520859558,
+        5.48521620581126,
+        7.626671861487777
+      ]
+    },
+    {
+      "configuration": "configuration_014",
+      "atomic_number": 70,
+      "n_electrons": 70.0,
+      "converged": true,
+      "energies_ha": {
+        "kinetic_radial": 8646.49128710499,
+        "kinetic_angular": 4745.56456275753,
+        "total_kinetic": 13392.05584986252,
+        "external_potential": -31914.76273119771,
+        "hartree": 5407.68225854281,
+        "exchange": 0.0,
+        "correlation": 0.0,
+        "hf_exchange": -276.28742808068,
+        "total_potential": -26783.36790073558,
+        "total_energy": -13391.31205087306
+      },
+      "total_energy_ha": -13391.312050873063,
+      "occupied_state_count": 13,
+      "occupied_eigenvalues_ha": [
+        -2104.4806634219944,
+        -345.8987567453582,
+        -330.0867436459772,
+        -79.08038553542981,
+        -71.8215000519178,
+        -58.47524859614128,
+        -15.986259942597083,
+        -12.973813284811097,
+        -7.551246862153244,
+        -0.6222544186265803,
+        -1.9946121849989285,
+        -1.1005003834318157,
+        -0.08200177072177756
+      ],
+      "lowest_5_unoccupied_eigs_ha": [
+        0.8066844692117798,
+        1.8835243784140714,
+        3.2958462119794953,
+        5.0312965046798706,
+        7.080577806800951
+      ]
+    },
+    {
+      "configuration": "configuration_015",
+      "atomic_number": 80,
+      "n_electrons": 80.0,
+      "converged": true,
+      "energies_ha": {
+        "kinetic_radial": 11654.1546085132,
+        "kinetic_angular": 6755.08080389478,
+        "total_kinetic": 18409.23541240798,
+        "external_potential": -43854.43841084083,
+        "hartree": 7381.59726850569,
+        "exchange": 0.0,
+        "correlation": 0.0,
+        "hf_exchange": -345.34133684229,
+        "total_potential": -36818.18247917743,
+        "total_energy": -18408.94706676945
+      },
+      "total_energy_ha": -18408.947066769455,
+      "occupied_state_count": 14,
+      "occupied_eigenvalues_ha": [
+        -2778.6326748355723,
+        -470.68814972801465,
+        -452.13321190447675,
+        -113.08975923875443,
+        -104.29371311622621,
+        -88.09822761604286,
+        -25.526813171637144,
+        -21.651923657545176,
+        -14.562420836030098,
+        -4.965254612334981,
+        -4.1360242031577,
+        -2.8034848768400686,
+        -0.6680284874252798,
+        -0.22497851048948506
+      ],
+      "lowest_5_unoccupied_eigs_ha": [
+        0.5899058122929006,
+        1.5643066532445893,
+        2.88485053367951,
+        4.53694660308215,
+        6.508724958605748
+      ]
+    },
+    {
+      "configuration": "configuration_016",
+      "atomic_number": 86,
+      "n_electrons": 86.0,
+      "converged": true,
+      "energies_ha": {
+        "kinetic_radial": 13728.44815090322,
+        "kinetic_angular": 8138.54793402474,
+        "total_kinetic": 21866.99608492796,
+        "external_potential": -51980.24644343238,
+        "hartree": 8634.05171664378,
+        "exchange": 0.0,
+        "correlation": 0.0,
+        "hf_exchange": -387.54717790504,
+        "total_potential": -43733.74190469364,
+        "total_energy": -21866.74581976568
+      },
+      "total_energy_ha": -21866.74581976568,
+      "occupied_state_count": 15,
+      "occupied_eigenvalues_ha": [
+        -3230.2817388430935,
+        -556.8823969612379,
+        -536.6462211693446,
+        -138.39135070773753,
+        -128.6410696171015,
+        -110.6707883909749,
+        -33.890474386783964,
+        -29.46096868704704,
+        -21.301006808390134,
+        -10.077326794280715,
+        -6.876380306360938,
+        -5.195947793506186,
+        -2.297323148062843,
+        -0.8546023349171431,
+        -0.40806522097334663
+      ],
+      "lowest_5_unoccupied_eigs_ha": [
+        0.3496914017178391,
+        1.2294367252521463,
+        2.4808427672632027,
+        4.0701034041613084,
+        5.984282102922561
+      ]
+    },
+    {
+      "configuration": "configuration_017",
+      "atomic_number": 88,
+      "n_electrons": 88.0,
+      "converged": true,
+      "energies_ha": {
+        "kinetic_radial": 14466.84477357438,
+        "kinetic_angular": 8628.6100520356,
+        "total_kinetic": 23095.45482560997,
+        "external_potential": -54844.07454980152,
+        "hartree": 9056.15372548711,
+        "exchange": 0.0,
+        "correlation": 0.0,
+        "hf_exchange": -401.54307734359,
+        "total_potential": -46189.463901658,
+        "total_energy": -23094.00907604803
+      },
+      "total_energy_ha": -23094.00907604803,
+      "occupied_state_count": 16,
+      "occupied_eigenvalues_ha": [
+        -3388.782605699389,
+        -587.5868335797373,
+        -566.7848918479324,
+        -147.71501610155232,
+        -137.64130336248348,
+        -119.07123289680587,
+        -37.186135135125646,
+        -32.56552499589572,
+        -24.04118424041186,
+        -12.273856909496061,
+        -8.101536380981091,
+        -6.296477124219933,
+        -3.1446675540561575,
+        -1.2364690587547997,
+        -0.6851123759167146,
+        0.03173342149260503
+      ],
+      "lowest_5_unoccupied_eigs_ha": [
+        1.062847489554663,
+        2.2923765370302056,
+        3.8590454188974412,
+        5.752381277186675,
+        7.963165423568438
+      ]
+    }
+  ]
+}

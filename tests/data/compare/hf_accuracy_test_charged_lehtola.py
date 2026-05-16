@@ -13,8 +13,8 @@ Compared quantities:
 - Total energy vs literature FEM (``E_fem_au``), Erkale, and Gaussian column.
 - HOMO and HF exchange are **ours only** (no literature columns in the JSON).
 
-Non-converged configurations are skipped in aggregates (same spirit as
-``hf_accuracy_test_neural_lehtola.py``).
+Non-converged configurations are skipped. Spin-polarized species are omitted from
+the report (Lehtola Table~5 spin-unpolarized subset only).
 
 Run from ``delta/``::
 
@@ -39,8 +39,12 @@ if str(PROJECT_ROOT) not in sys.path:
 from atom.utils.occupation_states import OccupationInfo
 
 _DATA_DIR = Path(__file__).resolve().parent.parent
-_DEFAULT_REFERENCE = _DATA_DIR / "reference" / "hf" / "lehtola_charged_atoms_hf.json"
-_DEFAULT_SUMMARY_HF = _DATA_DIR / "summary" / "hf"
+if str(_DATA_DIR) not in sys.path:
+    sys.path.insert(0, str(_DATA_DIR))
+from summary_naming import resolve_summary_under
+
+_DEFAULT_REFERENCE = _DATA_DIR / "reference" / "all_electron" / "hf" / "lehtola_charged_atoms_hf.json"
+_DEFAULT_SUMMARY_HF = _DATA_DIR / "summary" / "all_electron" / "hf"
 _DEFAULT_CASE = "charged"
 
 # Same order as ``reference/hf/lehtola_charged_atoms_hf.json`` / ``generate_dataset.HF_CHARGED_*``.
@@ -188,6 +192,16 @@ def _build_comparison(
     return rows, skipped
 
 
+def _is_spin_polarized(z: int, n_e: float) -> bool:
+    occ = OccupationInfo(
+        z_nuclear=z,
+        z_valence=z,
+        all_electron_flag=True,
+        n_electrons=n_e,
+    )
+    return not np.isclose(occ.n_free_electrons_up, occ.n_free_electrons_dn, atol=1e-12)
+
+
 def _format_report(
     *,
     ref_path: Path,
@@ -195,16 +209,8 @@ def _format_report(
     case: str,
     rows: list[CompareChargedRow],
     skipped_nonconverged: int,
+    skipped_spin_polarized: int,
 ) -> str:
-    def _is_spin_polarized(z: int, n_e: float) -> bool:
-        occ = OccupationInfo(
-            z_nuclear=z,
-            z_valence=z,
-            all_electron_flag=True,
-            n_electrons=n_e,
-        )
-        return not np.isclose(occ.n_free_electrons_up, occ.n_free_electrons_dn, atol=1e-12)
-
     def _append_group_report(
         lines_out: list[str],
         *,
@@ -273,20 +279,15 @@ def _format_report(
     lines.append(f"summary JSON:  {summary_json}")
     lines.append(f"case:          {case}")
     lines.append(
-        f"species listed: {len(rows)}  (skipped not converged: {skipped_nonconverged})"
+        f"species listed: {len(rows)}  "
+        f"(skipped not converged: {skipped_nonconverged}; "
+        f"omitted spin-polarized: {skipped_spin_polarized})"
     )
     lines.append("")
-    spin_unpolarized_rows = [r for r in rows if not _is_spin_polarized(r.z, r.n_e)]
-    spin_polarized_rows = [r for r in rows if _is_spin_polarized(r.z, r.n_e)]
     _append_group_report(
         lines,
-        group_title=f"Spin-unpolarized atoms (count: {len(spin_unpolarized_rows)})",
-        group_rows=spin_unpolarized_rows,
-    )
-    _append_group_report(
-        lines,
-        group_title=f"Spin-polarized atoms (count: {len(spin_polarized_rows)})",
-        group_rows=spin_polarized_rows,
+        group_title=f"Spin-unpolarized charged species (count: {len(rows)})",
+        group_rows=rows,
     )
     return "\n".join(lines) + "\n"
 
@@ -342,9 +343,12 @@ def main() -> None:
         print(str(e), file=sys.stderr)
         sys.exit(1)
 
-    if not rows:
+    report_rows = [r for r in rows if not _is_spin_polarized(r.z, r.n_e)]
+    skipped_polarized = len(rows) - len(report_rows)
+    if not report_rows:
         print(
-            "No converged configurations to compare (check SCF convergence in summary).",
+            "No spin-unpolarized converged configurations to report "
+            "(check SCF convergence or spin-polarized-only set).",
             file=sys.stderr,
         )
         sys.exit(1)
@@ -353,8 +357,9 @@ def main() -> None:
         ref_path=ref_path,
         summary_json=summary_json,
         case=args.case,
-        rows=rows,
+        rows=report_rows,
         skipped_nonconverged=skipped,
+        skipped_spin_polarized=skipped_polarized,
     )
     out_txt = args.out_txt.resolve()
     out_txt.parent.mkdir(parents=True, exist_ok=True)

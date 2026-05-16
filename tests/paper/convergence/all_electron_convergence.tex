@@ -30,7 +30,7 @@ We next compare LDA-SVWN sweep outputs for neutral uranium ($Z=92$) to independe
     \label{fig:ae-lda-z92-featom}
 \end{figure}
 
-Finally, Figures~\ref{fig:ae-lda-svwn-convergence} and~\ref{fig:ae-rscan-convergence} give LDA-SVWN and rSCAN counterparts to Figure~\ref{fig:ae-gga-pbe-convergence}: the same two-panel layout, error definitions, reference mesh ($R_{max}=40$~Bohr, $N_{fe}=16$), and atom range $Z=1$--$92$, with discretization trends consistent with the PBE panels in Figure~\ref{fig:ae-gga-pbe-convergence}. Together with the mesh construction and FeAtom comparison recorded above, these results provide additional numerical evidence for the all-electron convergence picture presented in the main paper.
+Finally, Figures~\ref{fig:ae-lda-svwn-convergence},~\ref{fig:ae-rscan-convergence}, and~\ref{fig:ae-hf-closed-shell-convergence} give LDA-SVWN, rSCAN, and Hartree--Fock counterparts to Figure~\ref{fig:ae-gga-pbe-convergence}: the same two-panel layout, error definitions, reference mesh ($R_{max}=40$~Bohr, $N_{fe}=16$), and atom range $Z=1$--$92$ (for Hartree--Fock, neutral closed-shell atoms only), with discretization trends consistent with the PBE panels in Figure~\ref{fig:ae-gga-pbe-convergence}. Together with the mesh construction and FeAtom comparison recorded above, these results provide additional numerical evidence for the all-electron convergence picture presented in the main paper.
 
 \begin{figure}[!htbp]
     \centering
@@ -44,4 +44,11 @@ Finally, Figures~\ref{fig:ae-lda-svwn-convergence} and~\ref{fig:ae-rscan-converg
     \includegraphics[width=\textwidth]{../figures/rscan_convergence_test_summary}
     \caption{Same as Figure~\ref{fig:ae-gga-pbe-convergence}, for the rSCAN meta-GGA exchange-correlation functional.}
     \label{fig:ae-rscan-convergence}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{../figures/hf_closed_shell_convergence_test_summary}
+    \caption{Same as Figure~\ref{fig:ae-gga-pbe-convergence}, for Hartree--Fock (neutral closed-shell atoms only).}
+    \label{fig:ae-hf-closed-shell-convergence}
 \end{figure}

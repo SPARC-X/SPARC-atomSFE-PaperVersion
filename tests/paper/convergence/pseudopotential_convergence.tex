@@ -21,7 +21,7 @@ As supplementary material to the convergence discussion presented in the main pa
     \label{fig:psp-boundary-subset-rule}
 \end{figure}
 
-Finally, Figures~\ref{fig:psp-lda-svwn-convergence} and~\ref{fig:psp-rscan-convergence} give LDA-SVWN and rSCAN counterparts to Figure~\ref{fig:psp-gga-pbe-convergence}: the same two-panel layout, error definitions, reference mesh ($R_{max}=40$~Bohr, $N_{fe}=16$), and atom ranges $Z=1$--$57$ and $Z=72$--$83$, with discretization trends consistent with the PBE panels in Figure~\ref{fig:psp-gga-pbe-convergence}. Together with the mesh construction recorded above, these results provide additional numerical evidence for the pseudopotential convergence picture presented in the main paper.
+Finally, Figures~\ref{fig:psp-lda-svwn-convergence},~\ref{fig:psp-rscan-convergence}, and~\ref{fig:psp-pbe0-convergence} give LDA-SVWN, rSCAN, and PBE0 counterparts to Figure~\ref{fig:psp-gga-pbe-convergence}: the same two-panel layout, error definitions, reference mesh ($R_{max}=40$~Bohr, $N_{fe}=16$), and atom ranges $Z=1$--$57$ and $Z=72$--$83$, with discretization trends consistent with the PBE panels in Figure~\ref{fig:psp-gga-pbe-convergence}. Together with the mesh construction recorded above, these results provide additional numerical evidence for the pseudopotential convergence picture presented in the main paper.
 
 \begin{figure}[!htbp]
     \centering
@@ -35,4 +35,11 @@ Finally, Figures~\ref{fig:psp-lda-svwn-convergence} and~\ref{fig:psp-rscan-conve
     \includegraphics[width=\textwidth]{../figures/pseudo_rscan_convergence_test_summary}
     \caption{Same as Figure~\ref{fig:psp-gga-pbe-convergence}, for the rSCAN meta-GGA exchange-correlation functional.}
     \label{fig:psp-rscan-convergence}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{../figures/pseudo_pbe0_convergence_test_summary}
+    \caption{Same as Figure~\ref{fig:psp-gga-pbe-convergence}, for the PBE0 hybrid exchange-correlation functional.}
+    \label{fig:psp-pbe0-convergence}
 \end{figure}

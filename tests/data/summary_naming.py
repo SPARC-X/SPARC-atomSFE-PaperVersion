@@ -1,4 +1,7 @@
-"""Shared summary JSON filenames: {mesh_tag}__{z_suffix}.json (e.g. fe12_R040__z1_92.json)."""
+"""Shared summary JSON filenames: {mesh_tag}__{z_suffix}.json (e.g. fe12_R040__z1_92.json).
+
+Also used: ``fe12_R040__closed_shell.json`` (neutral closed-shell subset), ``__charged``, ``__z7c``, etc.
+"""
 
 from __future__ import annotations
 

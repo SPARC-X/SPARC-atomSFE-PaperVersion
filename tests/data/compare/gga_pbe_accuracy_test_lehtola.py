@@ -2,7 +2,7 @@
 Compare GGA-PBE finite-element summary against HelFEM reference JSON (even Z subset).
 
 Default comparison:
-- Reference: tests/data/reference/gga_pbe/lehtola_even_z_2_to_20_gga_pbe.json
+- Reference: tests/data/reference/all_electron/gga_pbe/lehtola_even_z_2_to_20_gga_pbe.json
 - Ours:      tests/data/summary/all_electron/gga_pbe/fe12_R040__z1_92.json
 
 Outputs a text report in this folder:
@@ -10,7 +10,7 @@ Outputs a text report in this folder:
 
 Run from repo root::
 
-    python atom/tests/data/compare/gga_pbe_accuracy_test_lehtola.py
+    python atomSFE/tests/data/compare/gga_pbe_accuracy_test_lehtola.py
 """
 
 from __future__ import annotations
@@ -30,7 +30,9 @@ if str(_DATA_DIR) not in sys.path:
     sys.path.insert(0, str(_DATA_DIR))
 from summary_naming import default_all_electron_summary
 
-_DEFAULT_REFERENCE = _DATA_DIR / "reference" / "gga_pbe" / "lehtola_even_z_2_to_20_gga_pbe.json"
+_DEFAULT_REFERENCE = (
+    _DATA_DIR / "reference" / "all_electron" / "gga_pbe" / "lehtola_even_z_2_to_20_gga_pbe.json"
+)
 _DEFAULT_SUMMARY = default_all_electron_summary(_DATA_DIR, "gga_pbe")
 _DEFAULT_OUT_TXT = Path(__file__).resolve().parent / "gga_pbe_accuracy_test_lehtola_summary.txt"
 

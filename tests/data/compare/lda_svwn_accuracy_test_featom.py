@@ -2,11 +2,15 @@
 Compare ATOM LDA_SVWN summary against FEATOM reference JSON.
 
 Default comparison:
-- Reference: tests/data/reference/lda_svwn/featom_atoms_lda.json
+- Reference: tests/data/reference/all_electron/lda_svwn/featom_atoms_lda.json
 - Ours:      tests/data/summary/all_electron/lda_svwn/fe12_R040__z1_92.json
 
 Outputs a text report in this folder:
     lda_svwn_accuracy_test_featom_summary.txt
+
+Report sections:
+1) Selected-10 representative atoms (H, Be, C, Ne, Na, Si, Fe, Kr, Gd, U)
+2) Full Z=1..92 comparison
 """
 
 from __future__ import annotations
@@ -19,49 +23,41 @@ from pathlib import Path
 
 import numpy as np
 
-import sys
-
 _DATA_DIR = Path(__file__).resolve().parent.parent
 if str(_DATA_DIR) not in sys.path:
     sys.path.insert(0, str(_DATA_DIR))
 from summary_naming import default_all_electron_summary
 
-_DEFAULT_REFERENCE = _DATA_DIR / "reference" / "lda_svwn" / "featom_atoms_lda.json"
+_DEFAULT_REFERENCE = _DATA_DIR / "reference" / "all_electron" / "lda_svwn" / "featom_atoms_lda.json"
 _DEFAULT_SUMMARY = default_all_electron_summary(_DATA_DIR, "lda_svwn")
 _DEFAULT_OUT_TXT = Path(__file__).resolve().parent / "lda_svwn_accuracy_test_featom_summary.txt"
 
+_SELECTED_Z = [1, 4, 6, 10, 11, 14, 26, 36, 64, 92]
+
 
 def _fmt_fixed_total_digits(value: float, total_digits: int = 12) -> str:
-    """
-    Format number in fixed-point (no scientific notation) such that
-    digits before and after decimal point sum to `total_digits`.
-    """
     if not np.isfinite(value):
-        return str(value)
-
+        return "-"
     abs_v = abs(value)
     if abs_v < 1.0:
-        int_digits = 1  # keep leading zero as integer part
+        int_digits = 1
     else:
         int_digits = int(math.floor(math.log10(abs_v))) + 1
-
     frac_digits = max(0, total_digits - int_digits)
     return f"{value:.{frac_digits}f}"
 
 
 def _load_reference(path: Path) -> tuple[dict[int, dict], set[int]]:
     data = json.loads(path.read_text(encoding="utf-8"))
-    records = data.get("records", [])
-    failures = data.get("failures", [])
     by_z: dict[int, dict] = {}
-    for rec in records:
+    for rec in data.get("records", []):
         z = int(rec["Z"])
         by_z[z] = {
             "total_energy_au": float(rec["total_energy_au"]),
             "occupied_eigenvalues_au": np.asarray(rec["occupied_eigenvalues_au"], dtype=float),
             "n_occupied_states": int(rec["n_occupied_states"]),
         }
-    fail_z = {int(row["Z"]) for row in failures if "Z" in row}
+    fail_z = {int(row["Z"]) for row in data.get("failures", []) if "Z" in row}
     return by_z, fail_z
 
 
@@ -71,7 +67,7 @@ def _load_summary(path: Path) -> dict[int, dict]:
     for row in data.get("config_summaries", []):
         z = int(row.get("atomic_number"))
         by_z[z] = {
-            "configuration": str(row.get("configuration", f"configuration_Z{z:03d}")),
+            "configuration": str(row.get("configuration", f"configuration_{z:03d}")),
             "converged": bool(row.get("converged", True)),
             "total_energy_ha": None
             if row.get("total_energy_ha") is None
@@ -84,27 +80,93 @@ def _load_summary(path: Path) -> dict[int, dict]:
     return by_z
 
 
-def _format_report(
+def _build_row(
+    z: int,
+    ref_by_z: dict[int, dict],
+    ref_failed_z: set[int],
+    ours_by_z: dict[int, dict],
     *,
-    ref_path: Path,
-    summary_path: Path,
-    rows: list[dict],
+    collect_skips: bool,
     skipped_notes: list[str],
-) -> str:
+) -> dict:
+    r = ref_by_z.get(z)
+    o = ours_by_z.get(z)
+    ref_failed = z in ref_failed_z
+    configuration = o["configuration"] if o is not None else f"configuration_{z:03d}"
+
+    e_ref = None if r is None or ref_failed else r["total_energy_au"]
+    e_ours = None if o is None else o["total_energy_ha"]
+    has_e_ref = e_ref is not None
+    has_e_ours = e_ours is not None
+    valid_energy = has_e_ref and has_e_ours
+    de = (float(e_ours) - float(e_ref)) if valid_energy else None
+    abs_de = abs(de) if de is not None else None
+
+    ref_eps = np.asarray([] if r is None or ref_failed else r["occupied_eigenvalues_au"], dtype=float)
+    our_eps = np.asarray([] if o is None else o["occupied_eigenvalues_ha"], dtype=float)
+    n_ref_full = int(ref_eps.size)
+    n_ours = int(our_eps.size) if o is not None else None
+    n_ref = n_ref_full if not ref_failed and r is not None else None
+    n_cmp = min(n_ref_full, int(our_eps.size))
+    valid_eigenvalues = n_cmp > 0
+    max_abs_eps = float(np.max(np.abs(our_eps[:n_cmp] - ref_eps[:n_cmp]))) if valid_eigenvalues else None
+    mean_abs_eps = float(np.mean(np.abs(our_eps[:n_cmp] - ref_eps[:n_cmp]))) if valid_eigenvalues else None
+
+    if collect_skips:
+        if ref_failed:
+            skipped_notes.append(f"Z={z}: marked as failed in reference JSON.")
+        if o is None:
+            skipped_notes.append(f"Z={z}: missing in summary JSON.")
+        elif not o["converged"]:
+            skipped_notes.append(f"Z={z}: summary not converged ({o['configuration']}).")
+        if not valid_eigenvalues and (r is not None or o is not None):
+            skipped_notes.append(f"Z={z}: no occupied eigenvalues to compare.")
+        if valid_eigenvalues and n_ref is not None and n_ours is not None and n_ref != n_ours:
+            skipped_notes.append(
+                f"Z={z}: occupied state count mismatch (ref={n_ref}, ours={n_ours}); compared first {n_cmp}."
+            )
+
+    return {
+        "Z": z,
+        "configuration": configuration,
+        "has_e_ref": has_e_ref,
+        "has_e_ours": has_e_ours,
+        "valid_energy": valid_energy,
+        "valid_eigenvalues": valid_eigenvalues,
+        "e_ref": None if e_ref is None else float(e_ref),
+        "e_ours": None if e_ours is None else float(e_ours),
+        "de": de,
+        "abs_de": abs_de,
+        "n_ref": n_ref,
+        "n_ours": n_ours,
+        "max_abs_eps": max_abs_eps,
+        "mean_abs_eps": mean_abs_eps,
+    }
+
+
+def _build_rows(
+    z_list: list[int],
+    ref_by_z: dict[int, dict],
+    ref_failed_z: set[int],
+    ours_by_z: dict[int, dict],
+    *,
+    collect_skips: bool = False,
+    skipped_notes: list[str] | None = None,
+) -> list[dict]:
+    notes = skipped_notes if skipped_notes is not None else []
+    return [
+        _build_row(z, ref_by_z, ref_failed_z, ours_by_z, collect_skips=collect_skips, skipped_notes=notes)
+        for z in z_list
+    ]
+
+
+def _format_section(title: str, rows: list[dict]) -> list[str]:
     lines: list[str] = []
-    lines.append("LDA_SVWN accuracy vs FEATOM reference")
-    lines.append("")
-    lines.append(f"reference JSON: {ref_path}")
-    lines.append(f"summary JSON:   {summary_path}")
+    energy_rows = [r for r in rows if r["valid_energy"]]
+    eig_rows = [r for r in rows if r["valid_eigenvalues"]]
+    lines.append(title)
     lines.append(f"compared Z:     {len(rows)}")
-    if skipped_notes:
-        lines.append(f"skipped entries: {len(skipped_notes)}")
     lines.append("")
-    if skipped_notes:
-        lines.append("Skipped details")
-        for s in skipped_notes:
-            lines.append(f"  - {s}")
-        lines.append("")
 
     hdr = (
         f"{'Z':>3}  {'config':<18}  {'|E_ref| (Ha)':>18}  {'|E_ours| (Ha)':>18}  "
@@ -114,8 +176,6 @@ def _format_report(
     lines.append(hdr)
     lines.append("-" * len(hdr))
 
-    energy_rows = [r for r in rows if r["valid_energy"]]
-    eig_rows = [r for r in rows if r["valid_eigenvalues"]]
     for r in rows:
         e_ref_s = _fmt_fixed_total_digits(abs(r["e_ref"])) if r["has_e_ref"] else "-"
         e_ours_s = _fmt_fixed_total_digits(abs(r["e_ours"])) if r["has_e_ours"] else "-"
@@ -132,6 +192,7 @@ def _format_report(
 
     lines.append("-" * len(hdr))
     lines.append("")
+
     lines.append("Aggregate")
     lines.append(f"  valid rows (energy)       = {len(energy_rows)}")
     lines.append(f"  valid rows (eigenvalues)  = {len(eig_rows)}")
@@ -164,16 +225,45 @@ def _format_report(
     if eig_rows:
         worst_eps = max(eig_rows, key=lambda x: x["max_abs_eps"])
         lines.append(
-            f"  eigenvalues:  Z={worst_eps['Z']} ({worst_eps['configuration']}), max|d eps|={worst_eps['max_abs_eps']:.6e} Ha"
+            f"  eigenvalues:  Z={worst_eps['Z']} ({worst_eps['configuration']}), "
+            f"max|d eps|={worst_eps['max_abs_eps']:.6e} Ha"
         )
     else:
         lines.append("  eigenvalues:  -")
     lines.append("")
+    return lines
+
+
+def _format_report(
+    *,
+    ref_path: Path,
+    summary_path: Path,
+    selected_rows: list[dict],
+    full_rows: list[dict],
+    skipped_notes: list[str],
+) -> str:
+    lines: list[str] = []
+    lines.append("LDA-SVWN accuracy vs FEATOM reference")
+    lines.append("")
+    lines.append(f"reference JSON: {ref_path}")
+    lines.append(f"summary JSON:   {summary_path}")
+    lines.append("")
+    lines.extend(_format_section("Section A: Selected-10", selected_rows))
+    if skipped_notes:
+        lines.append(f"skipped entries (full sweep): {len(skipped_notes)}")
+        lines.append("")
+        lines.append("Skipped details")
+        for s in skipped_notes:
+            lines.append(f"  - {s}")
+        lines.append("")
+    lines.extend(_format_section("Section B: Full Z=1..92", full_rows))
     return "\n".join(lines) + "\n"
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description="Compare LDA_SVWN summary to FEATOM reference and write text report.")
+    ap = argparse.ArgumentParser(
+        description="Compare LDA-SVWN summary to FEATOM reference and write text report."
+    )
     ap.add_argument("--reference-json", type=Path, default=_DEFAULT_REFERENCE)
     ap.add_argument("--summary-json", type=Path, default=_DEFAULT_SUMMARY)
     ap.add_argument("--out-txt", type=Path, default=_DEFAULT_OUT_TXT)
@@ -191,68 +281,24 @@ def main() -> None:
     ref_by_z, ref_failed_z = _load_reference(ref_path)
     ours_by_z = _load_summary(summary_path)
 
-    rows: list[dict] = []
+    selected_rows = _build_rows(_SELECTED_Z, ref_by_z, ref_failed_z, ours_by_z)
+
     skipped_notes: list[str] = []
-    for z in sorted(set(ref_by_z) | set(ref_failed_z) | set(ours_by_z)):
-        r = ref_by_z.get(z)
-        o = ours_by_z.get(z)
-        ref_failed = z in ref_failed_z
-        configuration = o["configuration"] if o is not None else f"configuration_Z{z:03d}"
-
-        e_ref = None if r is None or ref_failed else r["total_energy_au"]
-        e_ours = None if o is None else o["total_energy_ha"]
-        has_e_ref = e_ref is not None
-        has_e_ours = e_ours is not None
-        valid_energy = has_e_ref and has_e_ours
-        de = (float(e_ours) - float(e_ref)) if valid_energy else None
-        abs_de = abs(de) if de is not None else None
-
-        ref_eps = np.asarray([] if r is None or ref_failed else r["occupied_eigenvalues_au"], dtype=float)
-        our_eps = np.asarray([] if o is None else o["occupied_eigenvalues_ha"], dtype=float)
-        n_ref_full = int(ref_eps.size)
-        n_ours = int(our_eps.size) if o is not None else None
-        n_ref = n_ref_full if not ref_failed and r is not None else None
-        n_cmp = min(n_ref_full, int(our_eps.size))
-        valid_eigenvalues = n_cmp > 0
-        max_abs_eps = float(np.max(np.abs(our_eps[:n_cmp] - ref_eps[:n_cmp]))) if valid_eigenvalues else None
-        mean_abs_eps = float(np.mean(np.abs(our_eps[:n_cmp] - ref_eps[:n_cmp]))) if valid_eigenvalues else None
-
-        if ref_failed:
-            skipped_notes.append(f"Z={z}: marked as failed in reference JSON.")
-        if o is None:
-            skipped_notes.append(f"Z={z}: missing in summary JSON.")
-        elif not o["converged"]:
-            skipped_notes.append(f"Z={z}: summary not converged ({o['configuration']}).")
-        if not valid_eigenvalues and (r is not None or o is not None):
-            skipped_notes.append(f"Z={z}: no occupied eigenvalues to compare.")
-        if valid_eigenvalues and n_ref is not None and n_ours is not None and n_ref != n_ours:
-            skipped_notes.append(
-                f"Z={z}: occupied state count mismatch (ref={n_ref}, ours={n_ours}); compared first {n_cmp}."
-            )
-
-        rows.append(
-            {
-                "Z": z,
-                "configuration": configuration,
-                "has_e_ref": has_e_ref,
-                "has_e_ours": has_e_ours,
-                "valid_energy": valid_energy,
-                "valid_eigenvalues": valid_eigenvalues,
-                "e_ref": None if e_ref is None else float(e_ref),
-                "e_ours": None if e_ours is None else float(e_ours),
-                "de": de,
-                "abs_de": abs_de,
-                "n_ref": n_ref,
-                "n_ours": n_ours,
-                "max_abs_eps": max_abs_eps,
-                "mean_abs_eps": mean_abs_eps,
-            }
-        )
+    full_z = sorted(set(ref_by_z) | ref_failed_z | set(ours_by_z))
+    full_rows = _build_rows(
+        full_z,
+        ref_by_z,
+        ref_failed_z,
+        ours_by_z,
+        collect_skips=True,
+        skipped_notes=skipped_notes,
+    )
 
     txt = _format_report(
         ref_path=ref_path,
         summary_path=summary_path,
-        rows=rows,
+        selected_rows=selected_rows,
+        full_rows=full_rows,
         skipped_notes=skipped_notes,
     )
     out_txt = args.out_txt.resolve()
