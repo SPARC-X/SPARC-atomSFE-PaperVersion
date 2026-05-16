@@ -1,0 +1,47 @@
+{
+  "generator": "featom::solve_schroed (single-Z runner, Z=92, Ne=16)",
+  "xc_label": "LDA_SVWN (featom solve_schroed; align with delta atom tests)",
+  "settings": {
+    "dataset_dir": "/mnt/c/Users/10404/OneDrive/Desktop/DFT/delta_learning/delta/atom/tests/data/lda_svwn/finite_element_sweep/fe16_R040",
+    "z": 92,
+    "eps": 1e-10,
+    "rmin": 0.0,
+    "rmax": 40.0,
+    "a": 101.0,
+    "Ne": 16,
+    "Nq": 60,
+    "p": 20,
+    "runner": "python scripts/export_z92_lda_resilient_fe16_r040.py",
+    "generated_at_utc": "2026-05-15T22:45:34.598087+00:00"
+  },
+  "n_success": 1,
+  "n_failed": 0,
+  "failures": [],
+  "records": [
+    {
+      "Z": 92,
+      "n_occupied_states": 18,
+      "total_energy_au": -25658.4178888607,
+      "occupied_eigenvalues_au": [
+        -3689.3551398371615,
+        -639.7787280865576,
+        -619.1085501806283,
+        -161.11807321007112,
+        -150.97898016334236,
+        -131.97735828315766,
+        -40.52808424529075,
+        -35.853320832584366,
+        -27.123212299672105,
+        -15.027460069203244,
+        -8.824089401577,
+        -7.018092204572609,
+        -3.8661751349689557,
+        -0.3665433531151621,
+        -1.3259763180875268,
+        -0.8225379709461436,
+        -0.14319018132113115,
+        -0.13094786219300045
+      ]
+    }
+  ]
+}
