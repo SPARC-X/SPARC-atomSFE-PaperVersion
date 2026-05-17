@@ -23,7 +23,7 @@ SPARC-atomSFE solves the Kohn-Sham equations self-consistently and supports a wi
 
 Advanced capabilities include the optimized effective potential (OEP) method, hybrid functionals with exact exchange (e.g. HF), RPA with parallelization, configurable parameters and advanced options, and more.
 
-This is a research code. Please try it out, [report issues](https://github.com/phanish-suryanarayana/atom/issues), and share feedback.
+This is a research code. Please try it out, [report issues](https://github.com/SPARC-X/SPARC-atomSFE/issues), and share feedback.
 
 ```python
 from atom import AtomicDFTSolver
@@ -154,7 +154,7 @@ SPARC-atomSFE is licensed under **GNU GPLv3**.
 
 For usage examples, see **[docs/cookbook.md](docs/cookbook.md)** (and [docs/README.md](docs/README.md) for a one-line pointer).
 
-For development and contribution guidelines, see the [repository](https://github.com/phanish-suryanarayana/atom).
+For development and contribution guidelines, see the [repository](https://github.com/SPARC-X/SPARC-atomSFE).
 
 
 
