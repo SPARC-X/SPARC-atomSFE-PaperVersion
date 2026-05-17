@@ -5,8 +5,7 @@
 
 # SPARC-atomSFE — Atomic DFT with Spectral Finite Elements
 
-![CI](https://img.shields.io/badge/CI-private%20repo-lightgrey) [![PyPI](https://img.shields.io/badge/PyPI-not%20published-lightgrey)](https://pypi.org/project/SPARC-atomSFE/)
-<!-- After making the repo public, use the dynamic badge: [![CI](https://github.com/phanish-suryanarayana/atom/actions/workflows/ci.yaml/badge.svg)](https://github.com/phanish-suryanarayana/atom/actions/workflows/ci.yaml) -->
+[![CI](https://github.com/1040403998/SPARC-atomSFE-released/actions/workflows/ci.yml/badge.svg)](https://github.com/1040403998/SPARC-atomSFE-released/actions/workflows/ci.yml)
 
 [**Features**](#features)
 | [**Quick start**](#quick-start)
