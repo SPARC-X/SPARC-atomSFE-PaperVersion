@@ -66,6 +66,8 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.log
+# Committed run logs under tests/data/summary (e.g. rpa_oep/Ne.log)
+!tests/data/summary/**/*.log
 
 
 # Jupyter Book build outputs
