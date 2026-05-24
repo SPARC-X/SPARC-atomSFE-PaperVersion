@@ -6,6 +6,14 @@
 
 
 ----------------
+May 24, 2026
+Name: Qihao Cheng
+Changes: (psps/README.md, tests/data/summary/pseudo_potential/rscan/, tests/data/compare/, tests/paper/)
+1. Fix pseudo **rSCAN** convergence summaries under `tests/data/summary/pseudo_potential/rscan/` that had duplicated all-electron data; replace with correct pseudopotential sweep JSON (`__z69c`, corrected domain-radius mesh tags). Regenerate `pseudo_rscan_convergence_test_summary.pdf` and refresh supplementary convergence figures.
+2. Clarify pseudopotential folder mapping in `psps/README.md`: **LDA functionals** -> `psps/SPMS/`, **SCAN functionals** (not rSCAN only) -> `psps/SG15/`.
+
+
+----------------
 May 16, 2026
 Name: Qihao Cheng
 Changes: (README.md, docs/README.md, src/solver.py, psps/SPMS/, psps/SG15/, psps/README.md, tests/)
