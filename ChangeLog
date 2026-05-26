@@ -6,6 +6,15 @@
 
 
 ----------------
+May 26, 2026
+Name: Qihao Cheng
+Changes: (tests/data/summary/pseudo_potential/, tests/paper/accuracy/pseudopotential_accuracy.tex, violin_plot/)
+1. Refresh pseudo benchmark summaries (`fe10_R040__z7c.json`) for LDA-SVWN, GGA-PBE, rSCAN, and PBE0 using mesh_concentration=20 runs.
+2. Update `pseudopotential_accuracy.tex` tables from per-orbital `(n,l)` eigenvalue comparisons against M-SPARC reference.
+3. Update PSP accuracy plotting inputs and regenerate related figures.
+
+
+----------------
 May 24, 2026
 Name: Qihao Cheng
 Changes: (psps/README.md, tests/data/summary/pseudo_potential/rscan/, tests/data/compare/, tests/paper/)
